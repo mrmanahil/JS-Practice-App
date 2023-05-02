@@ -43,6 +43,9 @@ import MainFile from "./liveSDK/MainFile";
 import JoinScreen from "./liveSDK/JoinScreen";
 
 function App() {
+  // const first = () => console.log("First");
+  // const cleanupFunction = () => console.log("Cleanup function called");
+
   // let array = [1,2,3,4,5]
   // expected output = [[1,2],[3,4],[5]]
   // let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -2944,7 +2947,7 @@ function App() {
   return (
     <>
       {/* <SocketExample /> */}
-      {/* <Routing /> */}
+      <Routing />
       {/* <button onClick={() => handleLogin()}>Submit</button> */}
       {/* <div style={{ display: "flex", justifyContent: "center" }}> */}
       {/* <JoinScreen /> */}
@@ -2956,7 +2959,7 @@ function App() {
           linkText="hello"
         /> */}
       {/* </div> */}
-      <Test test={"123"}>Learning JavaScript</Test>
+      {/* <Test test={"123"}>Learning JavaScript</Test> */}
       {/* <Button onClick={() => inc()}>+</Button>
       <Button onClick={() => dec()}>-</Button> */}
       {/* <h1 onClick={() => testing()}>TEst</h1> */}
