@@ -1,6 +1,7 @@
 import React from "react";
 
-const Test = ({ children }) => {
+const Test = (children) => {
+  // console.log(children);
   // const words = [
   //   "spray",
   //   "limit",
@@ -11,7 +12,11 @@ const Test = ({ children }) => {
   // ];
 
   // console.log(words.filter((item) => item.length > 5));
-  return <h1 className="text-center">{children}</h1>;
+  return (
+    <h1 className="text-center" onClick={() => console.log("HGELLO")}>
+      {children.test}
+    </h1>
+  );
 };
 
 export default Test;

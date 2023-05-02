@@ -31,8 +31,67 @@ import { toast } from "react-toastify";
 import Routing from "./Navigations/Routing";
 import { login } from "./reduxtoolkit/reducers/AuthReducers";
 import { numify } from "numify";
+import { InstagramEmbed } from "react-social-media-embed";
+import SocketExample from "./socketExample";
+import {
+  MeetingProvider,
+  MeetingConsumer,
+  useMeeting,
+  useParticipant,
+} from "@videosdk.live/react-sdk";
+import MainFile from "./liveSDK/MainFile";
+import JoinScreen from "./liveSDK/JoinScreen";
 
 function App() {
+  // let array = [1,2,3,4,5]
+  // expected output = [[1,2],[3,4],[5]]
+  // let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+  // let result = array
+  //   .slice(0, Math.ceil(array.length / 2))
+  //   .map((_, i) => array.slice(i * 2, i * 2 + 2));
+
+  // console.log(result); // [[1,2],[3,4],[5]]
+
+  // React.useMemo(() => {
+  //   console.log("i am running");
+  // }, []);
+
+  // const [test, setTest] = useState(false);
+  // const id = "123";
+
+  // React.useMemo(() => {
+  //   console.log("i am running");
+  // }, [id]);
+
+  // console.log(test);
+
+  // const [count, setCount] = useState(0);
+
+  // const inc = () => setCount(count + 1);
+  // const dec = () => setCount(count - 1);
+
+  // for (let a = 1; a <= 100; a = a + 10) {
+  //   document.write(a, "<br />");
+  // }
+
+  // let array = [1, 2, 3];
+  // array.length = 0;
+  // array.push(1);
+  // console.log(array);
+
+  // let array = ["first", "second"];
+  // console.log(array);
+  // console.log(typeof array);
+
+  // let a = "Hello";
+  // console.log(a);
+  // a = 5;
+  // console.log(a);
+  // a = 6;
+  // a = 8;
+  // console.log(a);
+
   // const dispatch = useDispatch();
   // setInterval(() => {
   //   // console.log("TEST");
@@ -2884,9 +2943,22 @@ function App() {
 
   return (
     <>
+      {/* <SocketExample /> */}
       {/* <Routing /> */}
       {/* <button onClick={() => handleLogin()}>Submit</button> */}
-      <Test>Learning JS</Test>
+      {/* <div style={{ display: "flex", justifyContent: "center" }}> */}
+      {/* <JoinScreen /> */}
+      {/* <InstagramEmbed
+          url="https://www.instagram.com"
+          postUrl="https://www.linkedin.com/posts/peterdiamandis_5-discoveries-the-james-webb-telescope-will-activity-6898694773406875648-z-D7"
+          width={325}
+          height={570}
+          linkText="hello"
+        /> */}
+      {/* </div> */}
+      <Test test={"123"}>Learning JavaScript</Test>
+      {/* <Button onClick={() => inc()}>+</Button>
+      <Button onClick={() => dec()}>-</Button> */}
       {/* <h1 onClick={() => testing()}>TEst</h1> */}
       {/* <MultiSelect /> */}
       {/* <SingleSelect /> */}
