@@ -41,6 +41,8 @@ import {
 } from "@videosdk.live/react-sdk";
 import MainFile from "./liveSDK/MainFile";
 import JoinScreen from "./liveSDK/JoinScreen";
+import WithOutControllingBrowser from "./Subtitles_On_Video/WithOutControllingBrowser";
+import WithControlling_Browser from "./Subtitles_On_Video/WithControlling_Browser";
 
 function App() {
   // const first = () => console.log("First");
@@ -2946,8 +2948,10 @@ function App() {
 
   return (
     <>
+      {/* <WithOutControllingBrowser /> */}
+      <WithControlling_Browser />
       {/* <SocketExample /> */}
-      <Routing />
+      {/* <Routing /> */}
       {/* <button onClick={() => handleLogin()}>Submit</button> */}
       {/* <div style={{ display: "flex", justifyContent: "center" }}> */}
       {/* <JoinScreen /> */}
