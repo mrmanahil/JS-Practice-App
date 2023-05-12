@@ -43,6 +43,7 @@ import MainFile from "./liveSDK/MainFile";
 import JoinScreen from "./liveSDK/JoinScreen";
 import WithOutControllingBrowser from "./Subtitles_On_Video/WithOutControllingBrowser";
 import WithControlling_Browser from "./Subtitles_On_Video/WithControlling_Browser";
+import Calendar from "./Calender";
 
 function App() {
   // const first = () => console.log("First");
@@ -2945,11 +2946,28 @@ function App() {
   //   const propertyNames = Object.values(body);
   //   console.log(propertyNames);
   // };
+  // const dispatch = useDispatch();
+
+  // useEffect(() => {
+  //   dispatch(fetchData());
+  // }, []);
+  // const store = useSelector((state) => state?.customers?.data);
+  // const test = (apiData) => {
+  //   return apiData?.map((item) => {
+  //     return (
+  //       <div>
+  //         <h1 className="text-center">{item?.name}</h1>
+  //       </div>
+  //     );
+  //   });
+  // };
 
   return (
     <>
+      <Calendar />
+      {/* {test(store)} */}
       {/* <WithOutControllingBrowser /> */}
-      <WithControlling_Browser />
+      {/* <WithControlling_Browser /> */}
       {/* <SocketExample /> */}
       {/* <Routing /> */}
       {/* <button onClick={() => handleLogin()}>Submit</button> */}

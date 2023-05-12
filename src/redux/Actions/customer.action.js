@@ -23,6 +23,7 @@ import {
   FILTER_USER_BY_EMAIL_NAME,
   GET_PRODUCT_SUBSCRIPTION_DATA,
   FILTER_SUBSCRIBER_BY_NAME_EMAIL,
+  GET_EVENTS,
 } from "../const/customer.const";
 import Error from "../../ReusableComp/ApiErrorComp/Error";
 import axios from "axios";
@@ -45,6 +46,22 @@ export const fetchData = () => async (dispatch) => {
   } catch (error) {
     Error(error?.message);
   }
+};
+
+export const getAllEvents = () => async (dispatch) => {
+  try {
+    const { data } = await axios.get(`http://54.145.247.199/api/v1/event`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/pdf",
+        Authorization: `Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvaXAuY29tLnBrIiwiYXVkIjoib2lwLmNvbS5wayIsInN1YiI6IjgzODYyNzIwLTJlMDctNDA0Yi1iYWY4LWNiMjZmNmJhNDNjZSIsImlhdCI6MTY4MzYyOTE1NSwiZXhwIjoxNjg2MjIxMTU1LCJwcm0iOiIyNDNlZjE3YTVjNDQ0ODU2N2JhZjg3NDJlZDBjOGVmMTFkMzg1NGFlNTM2NDQ4YWE2NDk5M2Q0NjgyMzg0N2M2NmZhZTg4NDM0ZmZjYjcyM2I2ZmUyNjUyOGRhMTY4NmViN2IxNDkyMGEyNTg4ZDkwZWRkOTBhYmU3ZGM4MDc4YiJ9.HNIvusg1lb3HtFl0wDgS4i7mY05rgPpppgK7oYfns_TkdpmE3KSbuL7KWvChlAcV7W1mYTvrPWJ2NrqEKJepow`,
+      },
+    });
+    dispatch({
+      type: GET_EVENTS,
+      payload: data?.data?.events,
+    });
+  } catch (err) {}
 };
 
 // export const getCustomers = (token, page,setLoading) => async (dispatch) => {
