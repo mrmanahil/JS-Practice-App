@@ -39,11 +39,11 @@ import {
   useMeeting,
   useParticipant,
 } from "@videosdk.live/react-sdk";
-import MainFile from "./liveSDK/MainFile";
-import JoinScreen from "./liveSDK/JoinScreen";
 import WithOutControllingBrowser from "./Subtitles_On_Video/WithOutControllingBrowser";
 import WithControlling_Browser from "./Subtitles_On_Video/WithControlling_Browser";
 import Calendar from "./Calender";
+import PhoneWithCountryCodeIcon from "./PhoneWithCountryIconInput";
+import LiveVideoSdk from "./LiveVideoSdk";
 
 function App() {
   // const first = () => console.log("First");
@@ -2964,12 +2964,14 @@ function App() {
 
   return (
     <>
-      <Calendar />
+      <LiveVideoSdk />
+      {/* <PhoneWithCountryCodeIcon /> */}
+      {/* <Routing /> */}
+      {/* <Calendar /> */}
       {/* {test(store)} */}
       {/* <WithOutControllingBrowser /> */}
       {/* <WithControlling_Browser /> */}
       {/* <SocketExample /> */}
-      {/* <Routing /> */}
       {/* <button onClick={() => handleLogin()}>Submit</button> */}
       {/* <div style={{ display: "flex", justifyContent: "center" }}> */}
       {/* <JoinScreen /> */}
