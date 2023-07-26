@@ -1,11 +1,5 @@
 import { useForm } from "react-hook-form";
-import React, {
-  Component,
-  useCallback,
-  useContext,
-  useEffect,
-  useState,
-} from "react";
+import React, { Component, useCallback, useContext, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { userLogin } from "./redux/Actions/actions";
 import ReusableInput from "./ReusableComp/ReusableInput/ReusableInput";
@@ -2964,13 +2958,13 @@ function App() {
 
   return (
     <>
-      <LiveVideoSdk />
+      {/* <LiveVideoSdk /> */}
       {/* <PhoneWithCountryCodeIcon /> */}
       {/* <Routing /> */}
       {/* <Calendar /> */}
       {/* {test(store)} */}
       {/* <WithOutControllingBrowser /> */}
-      {/* <WithControlling_Browser /> */}
+      <WithControlling_Browser />
       {/* <SocketExample /> */}
       {/* <button onClick={() => handleLogin()}>Submit</button> */}
       {/* <div style={{ display: "flex", justifyContent: "center" }}> */}
