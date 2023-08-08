@@ -38,6 +38,7 @@ import WithControlling_Browser from "./Subtitles_On_Video/WithControlling_Browse
 import Calendar from "./Calender";
 import PhoneWithCountryCodeIcon from "./PhoneWithCountryIconInput";
 import LiveVideoSdk from "./LiveVideoSdk";
+import http from "./http";
 
 function App() {
   // const first = () => console.log("First");
@@ -2956,6 +2957,20 @@ function App() {
   //   });
   // };
 
+  let data = {
+    email: "manahiltanwir@gmail.com",
+    password: "password",
+  };
+
+  useEffect(() => {
+    loginAPi();
+  }, []);
+
+  const loginAPi = async () => {
+    const response = await http.post(`/auth/signin`, data);
+    console.log(response);
+  };
+
   return (
     <>
       {/* <LiveVideoSdk /> */}
@@ -2964,7 +2979,7 @@ function App() {
       {/* <Calendar /> */}
       {/* {test(store)} */}
       {/* <WithOutControllingBrowser /> */}
-      <WithControlling_Browser />
+      {/* <WithControlling_Browser /> */}
       {/* <SocketExample /> */}
       {/* <button onClick={() => handleLogin()}>Submit</button> */}
       {/* <div style={{ display: "flex", justifyContent: "center" }}> */}
