@@ -4,7 +4,7 @@ import axios from "axios";
 // import authConfig from "src/configs/auth";
 
 const instance = axios.create({
-  baseURL: "https://7d8c-110-93-244-255.ngrok-free.app/api/v1", // local
+  baseURL: "https://dark-ruby-caridea-tutu.cyclic.app/api/v1", // local
   // baseURL: 'http://167.99.29.182/api/v1', // live
   timeout: 500000,
   headers: {

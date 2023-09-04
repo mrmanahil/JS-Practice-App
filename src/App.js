@@ -1,4 +1,3 @@
-import { useForm } from "react-hook-form";
 import React, { Component, useCallback, useContext, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { userLogin } from "./redux/Actions/actions";
@@ -39,6 +38,7 @@ import Calendar from "./Calender";
 import PhoneWithCountryCodeIcon from "./PhoneWithCountryIconInput";
 import LiveVideoSdk from "./LiveVideoSdk";
 import http from "./http";
+import UseFieldArray from "./UseFieldArray";
 
 function App() {
   // const first = () => console.log("First");
@@ -2957,22 +2957,23 @@ function App() {
   //   });
   // };
 
-  let data = {
-    email: "manahiltanwir@gmail.com",
-    password: "password",
-  };
+  // let data = {
+  //   email: "manahiltanwir@gmail.com",
+  //   password: "password",
+  // };
 
-  useEffect(() => {
-    loginAPi();
-  }, []);
+  // useEffect(() => {
+  //   loginAPi();
+  // }, []);
 
-  const loginAPi = async () => {
-    const response = await http.post(`/auth/signin`, data);
-    console.log(response);
-  };
+  // const loginAPi = async () => {
+  //   const response = await http.post(`/auth/signin`, data);
+  //   console.log(response);
+  // };
 
   return (
     <>
+      <UseFieldArray />
       {/* <LiveVideoSdk /> */}
       {/* <PhoneWithCountryCodeIcon /> */}
       {/* <Routing /> */}
