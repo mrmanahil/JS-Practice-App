@@ -39,6 +39,7 @@ import PhoneWithCountryCodeIcon from "./PhoneWithCountryIconInput";
 import LiveVideoSdk from "./LiveVideoSdk";
 import http from "./http";
 import UseFieldArray from "./UseFieldArray";
+import DoubleClickToOpenInputToUpdate from "./DoubleClickToOpenInputToUpdate";
 
 function App() {
   // const first = () => console.log("First");
@@ -2973,7 +2974,8 @@ function App() {
 
   return (
     <>
-      <UseFieldArray />
+      <DoubleClickToOpenInputToUpdate />
+      {/* <UseFieldArray /> */}
       {/* <LiveVideoSdk /> */}
       {/* <PhoneWithCountryCodeIcon /> */}
       {/* <Routing /> */}
