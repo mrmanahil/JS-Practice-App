@@ -1,8 +1,29 @@
 import axios from "axios";
 
-export default axios.create({
-  baseURL: "https://webprojectmockup.com/custom/residual/public/api",
+// ** Config
+// import authConfig from "src/configs/auth";
+
+const instance = axios.create({
+  baseURL: "https://dark-ruby-caridea-tutu.cyclic.app/api/v1", // local
+  // baseURL: 'http://167.99.29.182/api/v1', // live
+  timeout: 500000,
   headers: {
-    "Content-type": "application/json",
+    Accept: "application/json",
+    "Content-Type": "application/json",
   },
 });
+
+// Add a request interceptor
+instance.interceptors.request.use(function (config) {
+  const storedToken = window.localStorage.getItem("accessToken");
+
+  return {
+    ...config,
+    headers: {
+      authorization: storedToken ? `Bearer ${storedToken}` : null,
+      // "ngrok-skip-browser-warning": true,
+    },
+  };
+});
+
+export default instance;
