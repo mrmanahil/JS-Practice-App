@@ -18,7 +18,13 @@ const EditableText = ({ text, onUpdate }) => {
   };
 
   return isEditing ? (
-    <input type="text" value={editedText} onChange={handleChange} onBlur={handleBlur} autoFocus />
+    <input
+      type="text"
+      value={editedText}
+      onChange={handleChange}
+      onBlur={handleBlur}
+      autoFocus
+    />
   ) : (
     <h1
       style={{

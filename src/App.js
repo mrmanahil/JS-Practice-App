@@ -1,4 +1,10 @@
-import React, { Component, useCallback, useContext, useEffect, useState } from "react";
+import React, {
+  Component,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { userLogin } from "./redux/Actions/actions";
 import ReusableInput from "./ReusableComp/ReusableInput/ReusableInput";
@@ -40,7 +46,7 @@ import LiveVideoSdk from "./LiveVideoSdk";
 import http from "./http";
 import UseFieldArray from "./UseFieldArray";
 import DoubleClickToOpenInputToUpdate from "./DoubleClickToOpenInputToUpdate";
-import ReactDraggable from "./Draggable"
+import ReactDraggable from "./Draggable";
 
 function App() {
   // const first = () => console.log("First");
@@ -2976,93 +2982,8 @@ function App() {
   return (
     <>
       <ReactDraggable />
-      {/* <UseFieldArray /> */}
-      {/* <LiveVideoSdk /> */}
-      {/* <PhoneWithCountryCodeIcon /> */}
-      {/* <Routing /> */}
-      {/* <Calendar /> */}
-      {/* {test(store)} */}
-      {/* <WithOutControllingBrowser /> */}
-      {/* <WithControlling_Browser /> */}
-      {/* <SocketExample /> */}
-      {/* <button onClick={() => handleLogin()}>Submit</button> */}
-      {/* <div style={{ display: "flex", justifyContent: "center" }}> */}
-      {/* <JoinScreen /> */}
-      {/* <InstagramEmbed
-          url="https://www.instagram.com"
-          postUrl="https://www.linkedin.com/posts/peterdiamandis_5-discoveries-the-james-webb-telescope-will-activity-6898694773406875648-z-D7"
-          width={325}
-          height={570}
-          linkText="hello"
-        /> */}
-      {/* </div> */}
-      {/* <Test test={"123"}>Learning JavaScript</Test> */}
-      {/* <Button onClick={() => inc()}>+</Button>
-      <Button onClick={() => dec()}>-</Button> */}
-      {/* <h1 onClick={() => testing()}>TEst</h1> */}
-      {/* <MultiSelect /> */}
-      {/* <SingleSelect /> */}
-      {/* <label htmlFor="Color">Color</label> */}
-      {/* {colorData?.map((item) => {
-        return (
-          <h1 className="text-center" onClick={() => test(item.colorName)}>
-            {item.colorName}
-          </h1>
-        );
-      })} */}
-      {/* <div class="new">
-        <form onSubmit={handleSubmit(test)}>
-          {data.map((item) => {
-            return (
-              <>
-                <input
-                  style={{ color: "black" }}
-                  type={"checkbox"}
-                  className="form__field"
-                  {...register(item.name)}
-                  value={item.name}
-                />
-                <label for="html">{item.name}</label>
-              </>
-            );
-          })}
-          <video
-            // ref={mediaEl}
-            autoPlay
-            playsInline
-            muted
-            style={{ width: `400px` }}
-          /> */}
-      {/* <input
-            style={{ color: "black" }}
-            type={"checkbox"}
-            className="form__field"
-            {...register("css")}
-            value="CSS"
-          />
-          <label for="html">CSS</label>
-          <input
-            style={{ color: "black" }}
-            type={"checkbox"}
-            className="form__field"
-            {...register("Java-script")}
-            value="Java-script"
-          />
-          <label for="html">Java-script</label> */}
-      {/* {formState.errors.html && (
-              <span style={{ color: "red" }}>This field is required</span>
-            )}
-          </div>
-          <div class="form-group">
-            <input type="checkbox" {...register("css", { required: true })} />
-            <label for="html">CSS</label>
-          </div>
-          <div class="form-group">
-            <input
-              type="checkbox"
-              {...register("java-script", { required: true })}
-            />
-            <label for="html">JAVASCRIPT</label>
+      {/* <DoubleClickToOpenInputToUpdate /> */}
+      {/* ">JAVASCRIPT</label>
           </div>
           <div class="form-group">
             <input
@@ -3077,7 +2998,7 @@ function App() {
               {...register("REACT_NATIVE", { required: true })}
             />
             <label for="html">REACT_NATIVE</label>
-          </div> */}
+          </div> */}{" "}
       {/* <input type="submit" />
         </form>
       </div> */}
@@ -3144,7 +3065,6 @@ function App() {
           </button>
         );
       })} */}
-
       {/* {data.map((item) => {
         return (
           <>
