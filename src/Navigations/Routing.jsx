@@ -1,15 +1,11 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ProtectedRoute from "../Guards/ProtectedRoute";
-import UnprotectedRoute from "../Guards/UnprotectedRoute";
-import Dashboard from "./Dashboard";
-import Login from "./Login";
-
 import Layout from "../Layout/Route";
 import FirstComponent from "../Layout/FirstComp";
 import SecondComponent from "../Layout/SecondComponent";
 
 const Routing = () => {
+
   return (
     <>
       <BrowserRouter>

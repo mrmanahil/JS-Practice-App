@@ -13,7 +13,7 @@ const Test = (children) => {
 
   // console.log(words.filter((item) => item.length > 5));
   return (
-    <h1 className="text-center" onClick={() => console.log("HGELLO")}>
+    <h1 className="text-center" onClick={() => console.log("HELLO")}>
       {children.test}
     </h1>
   );

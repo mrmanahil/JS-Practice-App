@@ -47,6 +47,7 @@ import http from "./http";
 import UseFieldArray from "./UseFieldArray";
 import DoubleClickToOpenInputToUpdate from "./DoubleClickToOpenInputToUpdate";
 import ReactDraggable from "./Draggable";
+import JavaScript from "./JavaScript";
 
 function App() {
   // const first = () => console.log("First");
@@ -2981,7 +2982,8 @@ function App() {
 
   return (
     <>
-      <ReactDraggable />
+      <JavaScript />
+      {/* <ReactDraggable /> */}
       {/* <DoubleClickToOpenInputToUpdate /> */}
       {/* ">JAVASCRIPT</label>
           </div>
