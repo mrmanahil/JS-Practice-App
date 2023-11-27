@@ -4,11 +4,12 @@ import Pusher from "pusher-js";
 const PusherTest = () => {
   const [message, setMessage] = useState("");
 
+  const pusher = new Pusher("d829180e447a10fada67", {
+    cluster: "ap2",
+    // add any other options here, such as encrypted: true
+  });
+
   useEffect(() => {
-    const pusher = new Pusher("d829180e447a10fada67", {
-      cluster: "ap2",
-      // add any other options here, such as encrypted: true
-    });
 
     const channel = pusher.subscribe("my-channel");
     channel.bind("my-event", (data) => {
@@ -24,10 +25,6 @@ const PusherTest = () => {
   }, []);
 
   const handleClick = () => {
-    const pusher = new Pusher("d829180e447a10fada67", {
-      cluster: "ap2",
-      // add any other options here, such as encrypted: true
-    });
 
     const channel = pusher.channel("my-channel"); // <-- change here
     console.log(channel);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
@@ -12,14 +12,12 @@ import { JsonProvider } from "../src/Context/JsonContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <JsonProvider>
-        <ToastContainer />
-        <App />
-      </JsonProvider>
-    </Provider>
-  </React.StrictMode>
+  <Provider store={store}>
+    <JsonProvider>
+      <ToastContainer />
+      <App />
+    </JsonProvider>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
