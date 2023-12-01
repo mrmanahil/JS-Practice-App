@@ -9,6 +9,1160 @@ import { fetchData } from "../redux/Actions/customer.action";
 // let data = useSelector((state) => state?.customers?.data[0]);
 
 const Page = () => {
+
+  let vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  function checkVowel(param) {
+    let string = param.toString().toLowerCase();
+    let isVowelExists = false;
+
+    for (let i = 0; i < vowels.length; i++) {
+      const vowel = vowels[i];
+      for (let j = 0; j < string.length; j++) {
+        const char = string[j];
+        if (vowel === char) {
+          isVowelExists = true;
+          break; // Exit the inner loop once a vowel is found
+        }
+      }
+      if (isVowelExists) {
+        break; // Exit the outer loop once a vowel is found
+      }
+    }
+
+    if (isVowelExists) {
+      console.log('Yes');
+    } else {
+      console.log('No');
+    }
+  }
+
+  checkVowel('hello');
+
+  // let vowels = ['a', 'e', 'i', "o", "u"]
+
+  // let isVowelExists = false
+
+  // function checkVowel(param) {
+  //   let string = param.toString().toLowerCase()
+  //   for (let i = 0; i < vowels.length; i++) {
+  //     const element = vowels[i];
+  //     if (element === string) {
+  //       isVowelExists = true
+  //     }
+  //   }
+  //   if (isVowelExists) {
+  //     console.log("yes");
+  //   } else {
+  //     console.log("no");
+  //   }
+  // }
+
+  // checkVowel("hello")
+
+
+  // let array = [1, 2, 2, 1, 4, 5, 6, 6]
+
+  // let myArr = []
+
+  // let sameElement = []
+
+  // let sum = 0
+
+  // let greatestEle = array[0]
+
+  // for (let i = 0; i < array.length; i++) {
+  //   const firstElement = array[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < myArr.length; j++) {
+  //     const secondElement = myArr[j];
+  //     if (firstElement === secondElement) {
+  //       isDuplicate = true
+  //     }
+  //     if (firstElement > greatestEle) greatestEle = firstElement
+  //   }
+  //   sum += firstElement
+  //   if (!isDuplicate) {
+  //     myArr[myArr.length] = firstElement
+  //   }
+  //   if (isDuplicate) {
+  //     sameElement[sameElement.length] = firstElement
+  //   }
+  // }
+
+  // console.log(myArr);
+  // console.log(greatestEle);
+  // console.log(sameElement);
+  // console.log(sum);
+
+  // for (let i = 0; i < array.length; i++) {
+  //   const firstElement = array[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < myArr.length; j++) {
+  //     const secondElement = myArr[j];
+  //     if (firstElement === secondElement) {
+  //       isDuplicate = true
+  //     }
+  //     if (firstElement > greatestEle) {
+  //       greatestEle = firstElement
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     myArr[myArr.length] = firstElement
+  //   }
+  //   if (isDuplicate) {
+  //     sum += firstElement
+  //     sameElement[sameElement.length] = firstElement
+  //   }
+  // }
+
+  // console.log(myArr);
+  // console.log(sum);
+  // console.log(greatestEle);
+  // console.log(sameElement);
+
+  // for (let i = 0; i < array.length; i++) {
+  //   const firstElement = array[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < myArr.length; j++) {
+  //     const secondElement = myArr[j];
+  //     if (firstElement === secondElement) {
+  //       isDuplicate = true
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     myArr[myArr.length] = firstElement
+  //   }
+  //   if (isDuplicate) {
+  //     sameElement[sameElement.length] = firstElement
+  //   }
+  // }
+
+  // console.log(myArr);
+  // console.log(sameElement);
+
+  // for (let i = 0; i < array.length; i++) {
+  //   const firstElement = array[i];
+  //   let isDuplicate = false
+  //   for (let j = i + 1; j < array.length; j++) {
+  //     const secondElement = array[j];
+  //     if (firstElement === secondElement) {
+  //       isDuplicate = true
+  //       myArr[myArr.length] = firstElement
+  //     }
+  //   }
+  // }
+
+  // console.log(myArr);
+
+  // let myArr = []
+  // let sameElement = []
+
+  // for (let i = 0; i < array.length; i++) {
+  //   const firstElement = array[i];
+  //   let isDuplicate = false
+  //   for (let j = i + 1; j < array.length; j++) {
+  //     const secondElement = array[j];
+  //     if (firstElement === secondElement) {
+  //       isDuplicate = true
+  //       sameElement[sameElement.length] = firstElement
+  //     }
+  //   }
+  // }
+
+  // console.log(sameElement);
+
+  // for (let i = 0; i < array.length; i++) {
+  //   const firstElement = array[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < myArr.length; j++) {
+  //     const secondElement = myArr[j];
+  //     if (firstElement === secondElement) {
+  //       isDuplicate = true
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     myArr[myArr.length] = firstElement
+  //   }
+  //   if (isDuplicate) {
+  //     sameElement[sameElement.length] = firstElement
+  //   }
+  // }
+
+  // console.log(myArr);
+  // console.log(sameElement);
+
+  // const obj = {
+  //   name: "Syed Manahil",
+  //   age: 23,
+  //   isLiked: true,
+  //   isFavorite: true
+  // }
+
+  // obj['isFavorite'] = obj['isFavorite'] ? false : true
+  // console.log(obj);
+
+  // let a = "Manahil"
+  // let b = a
+  // b = "Farhan"
+
+  // console.log(a == b);
+
+  // let objOne = {
+  //   name: "Manahil"
+  // }
+
+  // let objTwo = objOne
+
+  // objTwo.name = "Farhan"
+
+  // console.log(objOne == objTwo);
+
+  // console.log({} == {});
+
+  // function checkPalindrome(param) {
+  //   const str = param.toString();
+  //   let reversedStr = "";
+
+  //   // Reverse the string manually
+  //   for (let i = str.length - 1; i >= 0; i--) {
+  //     reversedStr += str[i];
+  //   }
+
+  //   if (str === reversedStr) {
+  //     console.log("Palindrome");
+  //   } else {
+  //     console.log("Not a Palindrome");
+  //   }
+  // }
+
+  // checkPalindrome(121)
+
+
+  // function fibonacciSeries(argOne, argTwo) {
+  //   let firstNum = argOne
+  //   let secondNum = argTwo
+  //   let sum = 0
+  //   for (let i = 0; i < 5; i++) {
+  //     sum = firstNum + secondNum
+  //     firstNum = secondNum
+  //     secondNum = sum
+  //   }
+  //   console.log(sum);
+  // }
+
+  // fibonacciSeries(0, 1)
+
+  // let vowels = ['a', 'e', 'i', "o", "u"]
+
+  // function checkVowel(param) {
+  //   let isVowel = false
+  //   for (let i = 0; i < vowels.length; i++) {
+  //     const element = vowels[i];
+  //     if (element === param.toLowerCase()) {
+  //       isVowel = true
+  //       break
+  //     } else {
+  //       isVowel = false
+  //     }
+  //   }
+  //   isVowel ? console.log("Vowel Found") : console.log("Not A Vowel");
+  // }
+
+  // checkVowel("a")
+
+  // const sum = (a) => (b) => (c) => console.log(a + b + c);
+
+  // function sum(a) {
+  //   return function (b) {
+  //     return function (c) {
+  //       let sum = a + b + c
+  //       console.log(sum);
+  //     }
+  //   }
+  // }
+
+  // sum(1)(2)(3)
+
+  // let objOne = {
+  //   firstName: "Syed",
+  //   lastName: "Manahil"
+  // }
+
+  // let objTwo = objOne
+
+  // objTwo.firstName = "SYED"
+
+  // console.log(objOne, objTwo);
+
+  // objOne.fullName = objOne['firstName'] + " " + objOne['lastName']
+
+  // console.log(objOne);
+
+  // let num1 = [1, 2, 2, 1, 3, 4, 5]
+  // let num2 = [2, 2, 3, 5]
+  // let concatedArr = [...num1, ...num2]
+  // let myNewArr = []
+  // let highestEle = concatedArr[0]
+  // let sum = 0
+  // let index = 0
+
+  // for (let i = 0; i < concatedArr.length; i++) {
+  //   const element = concatedArr[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < myNewArr.length; j++) {
+  //     const elementOne = myNewArr[j];
+  //     if (element === elementOne) {
+  //       isDuplicate = true
+  //     }
+  //     if (element > highestEle) {
+  //       highestEle = element
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     myNewArr[myNewArr.length] = element
+  //     sum += element
+  //   }
+  //   for (let i = 0; i < myNewArr.length; i++) {
+  //     const element = myNewArr[i];
+  //     if (element > 0) {
+  //       index = i
+  //     }
+  //   }
+  // }
+
+
+  // console.log(myNewArr, "remove duplicated array");
+  // console.log(sum, "sum");
+  // console.log(highestEle, "highest element");
+  // console.log(index, 'index of new array');
+
+
+
+  // let finalArr = []
+
+  // for (let i = 0; i < num1.length; i++) {
+  //   const elementOne = num1[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < num2.length; j++) {
+  //     const elementTwo = num2[j];
+  //     if (elementOne === elementTwo) {
+  //       isDuplicate = true
+  //     }
+  //   }
+  //   if (isDuplicate) {
+  //     myNewArr[myNewArr.length] = elementOne
+  //   }
+  // }
+
+  // for (let i = 0; i < myNewArr.length; i++) {
+  //   const element = myNewArr[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < finalArr.length; j++) {
+  //     const elementTwo = finalArr[j];
+  //     if (element === elementTwo) {
+  //       isDuplicate = true
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     finalArr[finalArr.length] = element
+  //   }
+  // }
+
+  // console.log(finalArr);
+
+
+  // let array = [1, 2, 2, 3, 3, 3, 4, 45, 4, 6, 456, 453]
+
+  // let myArr = []
+  // let sum = 0
+  // let greatestEle = array[0]
+
+  // array.map((item) => {
+  //   if (!myArr.includes(item)) {
+  //     myArr.push(item)
+  //     sum += item
+  //   } if (item > greatestEle) {
+  //     greatestEle = item
+  //   }
+  // })
+
+  // console.log(myArr);
+  // console.log(greatestEle);
+  // console.log(sum);
+
+  // for (let i = 0; i < array.length; i++) {
+  //   const element = array[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < myArr.length; j++) {
+  //     const elementTwo = myArr[j];
+  //     if (element === elementTwo) {
+  //       isDuplicate = true
+  //     }
+  //     if (element > greatestEle) {
+  //       greatestEle = element
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     myArr[myArr.length] = element
+  //     sum += element
+  //   }
+  // }
+
+  // console.log(myArr);
+  // console.log(greatestEle);
+  // console.log(sum);
+
+  // let multiply = 1
+
+  // for (let i = 5; i > 0; i--) {
+  //   multiply = multiply * i
+  // }
+
+  // console.log(multiply);
+
+  // let firstArr = [1, 2, 3, 4, 5];
+  // let secArr = [4, 5, 6, 7, 8];
+  // let concatedArr = [...firstArr, ...secArr];
+
+  // let duplicatesArr = []
+  // let sum = 0
+  // let highestEle = concatedArr[0]
+
+  // concatedArr.map((item) => {
+  //   let isDuplicate = false
+  //   duplicatesArr.map((itemTwo) => {
+  //     if (item === itemTwo) {
+  //       isDuplicate = true
+  //     }
+  //     if (item > highestEle) {
+  //       highestEle = item
+  //     }
+  //   })
+  //   if (!isDuplicate) {
+  //     sum += item
+  //     duplicatesArr[duplicatesArr.length] = item
+  //   }
+  // })
+
+  // console.log(sum);
+  // console.log(highestEle);
+  // console.log(duplicatesArr);
+
+  // concatedArr.forEach((item) => {
+  //   let isDuplicate = false
+  //   duplicatesArr.forEach((ele) => {
+  //     if (item === ele) {
+  //       isDuplicate = true
+  //     }
+  //     if (item > highestEle) {
+  //       highestEle = item
+  //     }
+  //   })
+  //   if (!isDuplicate) {
+  //     duplicatesArr[duplicatesArr.length] = item
+  //     sum += item
+  //   }
+  // })
+
+  // console.log(sum);
+
+  // console.log(highestEle);
+
+  // console.log(duplicatesArr);
+
+  // for (let i = 0; i < concatedArr.length; i++) {
+  //   const element = concatedArr[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < duplicatesArr.length; j++) {
+  //     const secElement = duplicatesArr[j];
+  //     if (element === secElement) {
+  //       isDuplicate = true
+  //       break
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     duplicatesArr[duplicatesArr.length] = element
+  //   }
+  // }
+  // console.log(duplicatesArr);
+
+  // for (let i = 0; i < concatedArr.length; i++) {
+  //   const element = concatedArr[i];
+  //   for (let j = i + 1; j < concatedArr.length; j++) {
+  //     const secElement = concatedArr[j];
+  //     if (element === secElement) {
+  //       duplicatesArr[duplicatesArr.length] = element
+  //     }
+  //   }
+  // }
+
+  // console.log(duplicatesArr);
+
+  // for (let i = 0; i < concatedArr.length; i++) {
+  //   const element = concatedArr[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < duplicatesArr.length; j++) {
+  //     const secElement = duplicatesArr[j];
+  //     if (element === secElement) {
+  //       isDuplicate = true
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     duplicatesArr[duplicatesArr.length] = element
+  //   }
+  // }
+
+  // console.log(duplicatesArr);
+
+  // for (let i = 0; i < concatedArr.length; i++) {
+  //   const element = concatedArr[i];
+  //   for (let j = i + 1; j < concatedArr.length; j++) {
+  //     const secElement = concatedArr[j];
+  //     if (element === secElement) {
+  //       duplicatesArr[duplicatesArr.length] = element
+  //     }
+  //   }
+  // }
+
+  // console.log(duplicatesArr);
+
+  // for (let i = 0; i < concatedArr.length; i++) {
+  //   const element = concatedArr[i];
+  //   for (let j = i + 1; j < concatedArr.length; j++) {
+  //     const elementTwo = concatedArr[j];
+  //     if (element === elementTwo) {
+  //       duplicatesArr[duplicatesArr.length] = element
+  //     }
+  //   }
+  // }
+  // console.log(duplicatesArr);
+
+  // let sameValues = []
+
+  // for (let i = 0; i < concatedArr.length; i++) {
+  //   const element = concatedArr[i];
+  //   if (!duplicatesArr.includes(element)) {
+  //     duplicatesArr.push(element)
+  //   } else {
+  //     sameValues.push(element)
+  //   }
+  // }
+  // console.log(duplicatesArr);
+  // console.log(sameValues);
+
+  // for (let i = 0; i < concatedArr.length; i++) {
+  //   const firstEle = concatedArr[i];
+  //   for (let j = i + 1; j < concatedArr.length; j++) {
+  //     const element = concatedArr[j];
+  //     if (firstEle === element) {
+  //       duplicatesArr[duplicatesArr.length] = firstEle
+  //     }
+  //   }
+  // }
+
+  // console.log(duplicatesArr);
+
+  // for (let i = 0; i < concatedArr.length; i++) {
+  //   const firstElement = concatedArr[i];
+  //   for (let j = i + 1; j < concatedArr.length; j++) {
+  //     const secElement = concatedArr[j];
+  //     if (firstElement === secElement) {
+  //       duplicatesArr[duplicatesArr.length] = firstElement
+  //     }
+  //   }
+  // }
+
+  // console.log(duplicatesArr);
+
+  // for (let i = 0; i < concatedArr.length; i++) {
+  //   const firstEle = concatedArr[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < newArr.length; j++) {
+  //     const secElement = newArr[j];
+  //     if (firstEle === secElement) {
+  //       isDuplicate = true
+  //       duplicatesArr[duplicatesArr.length] = firstEle
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     newArr[newArr.length] = firstEle
+  //   }
+  // }
+
+  // console.log(newArr);
+  // console.log(duplicatesArr);
+
+  // for (let i = 0; i < concatedArr.length; i++) {
+  //   const firstEle = concatedArr[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < newArr.length; j++) {
+  //     const secElement = newArr[j];
+  //     if (firstEle === secElement) {
+  //       isDuplicate = true
+  //       duplicatesArr[duplicatesArr.length] = firstEle
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     newArr[newArr.length] = firstEle
+  //   }
+  // }
+
+  // console.log(newArr);
+  // console.log(duplicatesArr);
+
+  // let arrOne = [1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 5, 6]
+
+  // let arr = []
+
+  // let newArr = []
+
+  // for (let i = 0; i < arrOne.length; i++) {
+  //   const elementOne = arrOne[i];
+  //   let isDuplicate = false;
+
+  //   // Check if the current element is duplicated
+  //   for (let j = 1; j < arrOne.length; j++) {
+  //     const elementTwo = arrOne[j];
+  //     if (elementOne === elementTwo) {
+  //       isDuplicate = true;
+  //       break;
+  //     }
+  //   }
+
+  //   // If duplicated and not already in newArr, add it to newArr
+  //   if (isDuplicate && !newArr.includes(elementOne)) {
+  //     newArr.push(elementOne);
+  //   }
+  // }
+
+  // console.log(newArr);
+
+  // find duplicate values
+  // for (let i = 0; i < arrOne.length; i++) {
+  //   const elementOne = arrOne[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < arr.length; j++) {
+  //     const elementTwo = arr[j];
+  //     if (elementOne === elementTwo) {
+  //       isDuplicate = true
+  //       break
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     arr[arr.length] = arrOne[i]
+  //   }
+  // }
+
+  // for (let i = 0; i < arrOne.length; i++) {
+  //   const elementOne = arrOne[i];
+  //   let isDuplicate = true
+  //   for (let j = 0; j < newArr.length; j++) {
+  //     const elementTwo = newArr[j];
+  //     if (elementOne !== elementTwo) {
+  //       isDuplicate = false
+  //     }
+  //   }
+  //   if (isDuplicate) {
+  //     newArr[newArr.length] = elementOne
+  //   }
+  // }
+
+  // // console.log(arr);
+  // console.log(newArr);
+
+  // find 
+
+  // for (let i = 0; i < arrOne.length; i++) {
+  //   let isDuplicate = false
+  //   for (let j = 0; j < arr.length; j++) {
+  //     if (arrOne[i] === arr[j]) {
+  //       isDuplicate = true
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     arr[arr.length] = arrOne[i]
+  //   }
+  // }
+
+  // console.log(arr);
+
+  // for (let i = 0; i < arrOne.length; i++) {
+  //   const elementI = arrOne[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < newArr.length; j++) {
+  //     const elementJ = newArr[j];
+  //     if (elementI !== elementJ) {
+  //       isDuplicate = true
+  //       break
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     newArr[newArr.length] = arrOne[i]
+  //   }
+  // }
+
+  // console.log(newArr);
+
+  // let a = 5
+
+  // console.log(5 * 4 * 3 * 2 * 1); // 120
+
+  // let sum = 1
+
+  // for (let i = 5; i > 0; i--) {
+  //   sum = sum * i
+  // }
+  // console.log(sum);
+
+
+  // let checkNum = 5
+
+  // let isPrimeNum = true
+
+  // for (let i = 2; i < checkNum; i++) {
+  //   if (checkNum % i === 0) {
+  //     isPrimeNum = false
+  //   }
+  // }
+
+  // console.log(isPrimeNum);
+
+  // function check(param) {
+  //   let reverseString = param.toString().split("").reverse().join("")
+  //   if (reverseString.endsWith("-")) {
+  //     reverseString = "-" + reverseString
+  //     return parseInt(reverseString)
+  //   }
+  //   return Number(reverseString)
+  // }
+
+  // let test = check(321)
+  // console.log(typeof test, test);
+
+  // console.log(check(-321));
+
+  // let a = 321
+
+  // let operator = a < 0 ? "-" : "+"
+
+  // let absValue = Math.abs(a);
+
+  // let newInt = absValue.toString().split("").reverse().join("")
+
+  // let newNum = Number(operator + newInt)
+
+  // console.log(newNum);
+
+  // let arrWithDuplicates = [4, 8, 10, 9, 5, 8, 9, 4];
+
+  // console.log(Math.max(...arrWithDuplicates));
+
+  // console.log([...new Set(arrWithDuplicates)]);
+
+  // let arr = []
+
+  // arrWithDuplicates.forEach((item) => {
+  //   let isDuplicate = false
+  //   arr.forEach((innerItem) => {
+  //     if (item === innerItem) {
+  //       isDuplicate = true
+  //     }
+  //   })
+  //   if (!isDuplicate) {
+  //     arr[arr.length] = item
+  //   }
+  // })
+
+  // console.log(arr);
+
+  // for (let i = 0; i < arrWithDuplicates.length; i++) {
+  //   let isDuplicate = false
+  //   for (let j = 0; j < arr.length; j++) {
+  //     if (arrWithDuplicates[i] === arr[j]) {
+  //       isDuplicate = true
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     arr[arr.length] = arrWithDuplicates[i]
+  //   }
+  // }
+
+  // console.log(arr);
+
+  // arrWithDuplicates.map((item, index) => {
+  //   let isDuplicate = false
+  //   arr.map((innerItem, innerIndex) => {
+  //     if (item === innerItem) {
+  //       isDuplicate = true
+  //     }
+  //   })
+  //   if (!isDuplicate) {
+  //     arr[arr.length] = item
+  //   }
+  // })
+
+  // console.log(arr);
+
+  // arrWithDuplicates.map((item, index) => {
+  //   if (arrWithDuplicates.indexOf(item) === index) {
+  //     arr[arr.length] = item
+  //   }
+  // })
+
+  // console.log(arr);
+
+  // arrWithDuplicates.map((item, index) => {
+  //   if (!arr.includes(item)) {
+  //     arr.push(item)
+  //   }
+  // })
+
+  // console.log(arr);
+
+  // let arrOne = [4, 8, 10, 9, 5];
+  // let arrTwo = [5, 10, 8, 9, 4];
+
+  // let isSame = arrOne.length === arrTwo.length && arrOne.every((item) => arrTwo.indexOf(item) !== -1)
+
+  // console.log(isSame);
+
+  // let isEqual = false;
+
+  // function checkEquality(arr1, arr2) {
+  //   if (arr1.length === arr2.length) {
+  //     isEqual = true
+  //     for (let i = 0; i < arr1.length; i++) {
+  //       let found = false
+  //       for (let j = 0; j < arr2.length; j++) {
+  //         if (arr1[i] === arr2[j]) {
+  //           found = true
+  //         }
+  //       }
+  //       if (!found) {
+  //         isEqual = false
+  //       }
+  //     }
+  //   } else isEqual = false
+  // }
+
+  // checkEquality(arrOne, arrTwo);
+
+  // console.log(isEqual);
+
+  // const isSame =
+  //   arrOne.length === arrTwo.length &&
+  //   arrOne.every(item => arrTwo.indexOf(item) !== -1)
+
+  // console.log(isSame);
+
+  // const isSame =
+  //   arrOne.length === arrTwo.length &&
+  //   arrOne.every((item) => {
+  //     if (!arrTwo.includes(item)) {
+  //       return false;
+  //     } else return true;
+  //   });
+
+  // console.log(isSame);
+
+  // let isEqual = false;
+
+  // function checkEquality(arr1, arr2) {
+  //   if (arr1.length === arr2.length) {
+  //     isEqual = true;
+  //     for (let i = 0; i < arr1.length; i++) {
+  //       let found = false;
+  //       for (let j = 0; j < arr2.length; j++) {
+  //         if (arr1[i] === arr2[j]) {
+  //           found = true;
+  //         }
+  //       }
+  //       if (!found) {
+  //         isEqual = false;
+  //       }
+  //     }
+  //   } else isEqual = false;
+  // }
+
+  // checkEquality(arrOne, arrTwo);
+
+  // console.log(isEqual);
+
+  // function checkEquality(arr1, arr2) {
+  //   if (arr1.length === arr2.length) {
+  //     isEqual = true;
+  //     for (let i = 0; i < arr1.length; i++) {
+  //       let found = false;
+  //       for (let j = 0; j < arr2.length; j++) {
+  //         if (arr1[i] === arr2[j]) {
+  //           found = true;
+  //         }
+  //       }
+  //       if (!found) {
+  //         isEqual = false;
+  //       }
+  //     }
+  //   } else {
+  //     isEqual = false;
+  //   }
+  // }
+
+  // checkEquality(arrOne, arrTwo);
+
+  // console.log(isEqual);
+
+  // let isEqual;
+
+  // for (let i = 0; i < arrOne.length; i++) {
+  //   isEqual = false;
+  //   if (arrOne.length !== arrTwo.length) {
+  //     isEqual = false;
+  //   }
+  //   for (let j = 0; j < arrTwo.length; j++) {
+  //     if (arrOne[i] === arrTwo[j]) {
+  //       isEqual = true;
+  //       break;
+  //     }
+  //   }
+  //   if (!isEqual) {
+  //     isEqual = false;
+  //   }
+  // }
+
+  // console.log(isEqual);
+
+  // let sortedArrOne = arrOne.sort();
+  // let sortedArrTwo = arrTwo.sort();
+
+  // let compare = JSON.stringify(sortedArrOne) === JSON.stringify(sortedArrTwo);
+  // console.log(compare);
+
+  // var name = "Manahil";
+
+  // function checkMyName() {
+  //   name = "OKKKKKKK";
+  //   console.log(name);
+  //   var name = "Maaz";
+  // }
+
+  // checkMyName();
+
+  // const checkMyName = () => {
+  //   name = "OK";
+  //   console.log(name);
+  //   var name = "Maaz";
+  // };
+
+  // checkMyName();
+
+  // let objOne = {
+  //   name: "Manahil",
+  //   age: 23,
+  // };
+
+  // let objTwo = objOne;
+
+  // objTwo.age = 25;
+
+  // console.log(objOne);
+  // console.log(objTwo);
+
+  // let a = {};
+
+  // let b = a;
+
+  // let c = {};
+
+  // console.log(a === c);
+  // console.log(a === b);
+  // console.log(a === a);
+
+  // console.log(a === c);
+  // console.log(a == b);
+  // console.log(a === a);
+
+  // let arr = [1, 2, 3];
+
+  // console.log(arr.indexOf(2));
+
+  // let arr = [
+  //   {
+  //     name: "Manahil",
+  //   },
+  //   {
+  //     name: "Naveed",
+  //   },
+  // ];
+
+  // console.log(arr.indexOf(1));
+
+  // console.log([] === []);
+
+  // console.log("" === "");
+
+  // console.log({} == {});
+
+  // let obj = {};
+
+  // console.log(Array.isArray(obj));
+  // console.log(arr instanceof Array);
+
+  // console.log(400.4 === 200.2 * 2);
+  // console.log(900.9 === (300.3 * 3).toFixed(1));
+
+  // console.log(1);
+
+  // setTimeout(() => {
+  //   console.log("1000 Ms Timer");
+  // },1000);
+
+  // setTimeout(() => {
+  //   console.log("Without Timer");
+  // });
+
+  // setTimeout(() => {
+  //   console.log("0 Second Timer");
+  // }, 0);
+
+  // let str = "Hello World";
+
+  // console.log(str.replace(/l/g, "WWWWWWWWWWWW"));
+
+  // console.log(str.replace("o", "OK"));
+
+  // let firstArr = [1, 2, 3, 4, 5];
+  // let secArr = [4, 5, 6, 7, 8];
+  // let concatedArr = [...firstArr, ...secArr];
+  // let newArr = [];
+
+  // for (let i = 0; i < concatedArr.length; i++) {
+  //   const firstElement = concatedArr[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < newArr.length; j++) {
+  //     const secElement = newArr[j];
+  //     if (firstElement === secElement) {
+  //       isDuplicate = true
+  //       newArr[newArr.length] = firstElement
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     newArr[newArr.length] = firstElement
+  //   }
+  // }
+
+  // console.log('====');
+  // console.log(newArr, '====');
+
+  // let arr = [];
+  // concatedArr.filter((ele) => {
+  //   if (!arr.includes(ele)) {
+  //     return (arr[arr.length] = ele);
+  //   }
+  // });
+
+  // console.log(arr);
+
+  // let returnData = firstArr.filter((ele) => {
+  //   return secArr.includes(ele);
+  // });
+
+  // console.log(returnData);
+
+  // let duplicatesArr = [];
+  // let newArr = [];
+
+  // for (let i = 0; i < concatedArr.length; i++) {
+  //   const element = concatedArr[i];
+  //   let isDuplicate = false;
+  //   for (let j = 0; j < duplicatesArr.length; j++) {
+  //     const secElement = duplicatesArr[j];
+  //     if (element === secElement) {
+  //       isDuplicate = true;
+  //       newArr[newArr.length] = element;
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     duplicatesArr[duplicatesArr.length] = element;
+  //   }
+  // }
+
+  // console.log("Duplicates:", duplicatesArr);
+  // console.log("Unique values:", newArr);
+
+  // for (let i = 0; i < concatedArr.length; i++) {
+  //   const currentElement = concatedArr[i];
+  //   let isDuplicate = false;
+
+  //   for (let j = 0; j < newArr.length; j++) {
+  //     if (currentElement === newArr[j]) {
+  //       isDuplicate = true;
+  //       duplicatesArr[duplicatesArr.length] = currentElement;
+  //       break;
+  //     }
+  //   }
+
+  //   if (!isDuplicate) {
+  //     newArr[newArr.length] = currentElement;
+  //   }
+  // }
+
+  // console.log("Duplicates:", duplicatesArr);
+  // console.log("Unique values:", newArr);
+
+  // let firstArr = [1, 2, 3, 4, 5];
+  // let secArr = [4, 5, 6, 7, 8];
+  // let concatedArr = [...firstArr, ...secArr];
+
+  // let arr = [];
+  // let newArr = [];
+
+  // for (let i = 0; i < firstArr.length; i++) {
+  //   const firstElement = firstArr[i];
+  //   for (let j = 0; j < secArr.length; j++) {
+  //     const secondElement = secArr[j];
+  //     if (firstElement === secondElement) {
+  //       arr[arr.length] = firstElement;
+  //     }
+  //   }
+  // }
+
+  // for (let i = 0; i < concatedArr.length; i++) {
+  //   const firstEle = concatedArr[i];
+  //   let isDuplicate = false;
+  //   for (let j = 0; j < newArr.length; j++) {
+  //     const secElement = newArr[j];
+  //     if (firstEle === secElement) {
+  //       isDuplicate = true;
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     newArr[newArr.length] = firstEle;
+  //   }
+  // }
+
+  // console.log(newArr);
+
+  // let x = 0;
+
+  // console.log(x ?? "OK");
+
+  // let x = "";
+
+  // console.log(x || "OK");
+
+  // let x = 0;
+
+  // console.log(x ?? null);
+
+  // console.log(x ? x : "OK");
+  // console.log(x || "OK");
+
+  // let x = "";
+
+  // console.log("" === "");
+  // console.log(typeof x);
+
   // let objOne = {
   //   firstName: "Syed",
   //   lastName: "Manahil",
