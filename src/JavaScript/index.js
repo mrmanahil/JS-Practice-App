@@ -9,35 +9,454 @@ import { fetchData } from "../redux/Actions/customer.action";
 // let data = useSelector((state) => state?.customers?.data[0]);
 
 const Page = () => {
+  //   debugger
+  //   setTimeout(() => {
+  //   debugger
+  //   console.log("OK")
+  //   debugger
+  // }, 1000);
+  // debugger
 
-  let vowels = ['a', 'e', 'i', 'o', 'u'];
+  // function test() {
+  //   console.log("YES");
+  // }
 
-  function checkVowel(param) {
-    let string = param.toString().toLowerCase();
-    let isVowelExists = false;
+  // console.log(window);
 
-    for (let i = 0; i < vowels.length; i++) {
-      const vowel = vowels[i];
-      for (let j = 0; j < string.length; j++) {
-        const char = string[j];
-        if (vowel === char) {
-          isVowelExists = true;
-          break; // Exit the inner loop once a vowel is found
-        }
-      }
-      if (isVowelExists) {
-        break; // Exit the outer loop once a vowel is found
-      }
-    }
+  // test();
 
-    if (isVowelExists) {
-      console.log('Yes');
-    } else {
-      console.log('No');
-    }
-  }
+  // const threeDArray = [
+  //   [
+  //     [1, 2, 3],
+  //     [4, 5, 6],
+  //     [7, 8, 9]
+  //   ],
+  //   [
+  //     [10, 11, 12],
+  //     [13, 14, 15],
+  //     [16, 17, 18]
+  //   ],
+  //   [
+  //     [19, 20, 21],
+  //     [22, 23, 24],
+  //     [25, 26, 27]
+  //   ]
+  // ];
 
-  checkVowel('hello');
+  // console.log(threeDArray.flat(Infinity));
+
+  // const singleArr = threeDArray.reduce((accum, currVal) => {
+  //   return accum.concat(currVal)
+  // })
+
+  // console.log(singleArr);
+
+  // const newArr = threeDArray.flat()
+
+  // console.log(newArr.flat());
+
+  // const twoDArray = [
+  //   [1, 2, 3],
+  //   [4, 5, 6],
+  //   [7, 8, 9]
+  // ];
+
+  // const flatArr = twoDArray.flat()
+  // console.log(flatArr);
+
+  // const [test1, test2, test3] = twoDArray
+  // console.log([...test1, ...test2, ...test3]);
+
+  // const threeDArray = [
+  //   [
+  //     [1, 2, 3],
+  //     [4, 5, 6],
+  //     [7, 8, 9]
+  //   ],
+  //   [
+  //     [10, 11, 12],
+  //     [13, 14, 15],
+  //     [16, 17, 18]
+  //   ],
+  //   [
+  //     [19, 20, 21],
+  //     [22, 23, 24],
+  //     [25, 26, 27]
+  //   ]
+  // ];
+
+  // function flattenArray(threeDArray) {
+  //   return threeDArray.reduce((flat, item) => {
+  //     if (Array.isArray(item)) {
+  //       return [...flat, ...flattenArray(item)];
+  //     } else {
+  //       return [...flat, item];
+  //     }
+  //   }, []);
+  // }
+
+  // console.log(flattenArray(threeDArray));
+
+  // const matrix = [
+  //   [1, 2, 3],
+  //   [4, 5, 6],
+  //   [7, 8, 9]
+  // ];
+
+  // const [firstArr, secArr] = matrix
+
+  // let newArr = [...firstArr, ...secArr]
+
+  // console.log(newArr);
+
+  // const a = [8, 2, 5, 5]
+
+  // let reduce = a.reduce((preVal, currVal, curIndex, arr) => {
+  //   let sum = preVal + currVal
+  //   if (curIndex === arr.length - 1) {
+  //     return sum / arr.length
+  //   }
+  //   return sum
+  // })
+
+  // console.log(reduce);
+
+  // function runTenTimes(times) {
+  //   if (times > 0) {
+  //     console.log("OK");
+  //     runTenTimes(times - 1)
+  //   }
+  // }
+
+  // runTenTimes(10)
+
+  // function runTenTimes(param) {
+  //   if (param > 0) {
+  //     console.log("OK");
+  //     runTenTimes(param - 1)
+  //   }
+  // }
+
+  // runTenTimes(10)
+
+  // function callFunction(times) {
+  //   if (times > 0) {
+  //     console.log("OK", times)// Call your function here
+  //     callFunction(times - 1); // Recursive call
+  //   }
+  // }
+
+  // // Call the function 10 times
+  // callFunction(10);
+
+  // const times = 10;
+
+  // Array.from({ length: times }, () => console.log("OK"));
+
+  // let a = [1, 2, 3]
+
+  // let reduce = a.reduce((accum, curVal, curIndex, arr) => {
+  //   let sum = accum + curVal
+  //   if (curIndex === arr.length - 1) {
+  //     return sum / arr.length
+  //   }
+  // })
+
+  // console.log(reduce);
+
+  // const number = 5.2;
+  // const tenPercent = number * 0.1;
+
+  // console.log(tenPercent);
+
+  // let a = 10;
+
+  // let b = 20;
+
+  // let c = a
+
+  // a = b
+
+  // b = c
+
+  // console.log(a, b);
+
+  // let c = a + b
+
+  // a = b
+
+  // b = c - b
+
+  // console.log(a, b);
+
+  // [a, b] = [b, a]
+
+  // console.log(a, b);
+
+  // a = a + b
+  // b = a - b
+  // a = a - b
+  // console.log(a, b);
+
+  // let arr = [2, 4, 5]
+
+  // let sum = arr.reduce((item, currentVal) => item * currentVal)
+  // console.log(sum);
+
+  // let a = 100;
+  // let b = 200;
+
+  // a = a + b // a = 300
+  // b = a - b // b = 300 - 200 = 100
+  // a = a - b // 300 - 100 => a = 200
+
+  // console.log(a, b);
+
+  // [a, b] = [b, a]
+
+  // console.log(a, b);
+
+  // let c = a
+  // a = b
+  // b = c
+  // console.log(a, b);
+
+  // let a = 10;
+  // let b = 20;
+
+  // a = a + b
+  // b = a - b
+  // a = a - b
+  // console.log(a, b);
+
+  // let c = a
+  // a = b
+  // b = c
+  // console.log(a, b);
+
+  // a = a + b
+  // b = a - b
+  // a = a - b
+  // console.log(a, b);
+
+  // a = a + b
+  // b = a - b
+  // console.log(b);
+  // a = a - b
+  // console.log(a);
+
+  // let tempVar = a
+  // a = b
+  // b = tempVar
+
+  // console.log(a, b);
+
+  // [a, b] = [b, a]
+
+  // console.log(a, b);
+
+  // let a = 10;
+  // let b = 20;
+
+  // // Destructuring assignment to swap values
+  // [b, a] = [a, b];
+
+  // console.log(a, b);
+
+  // let a = 10;
+  // let b = 20;
+
+  // [b, a] = [a, b];
+
+  // console.log(a, b);
+
+  // const
+  //   a
+  //     = 10
+  // console.log(a);
+
+  // function sum(a) {
+  //   return function (b) {
+  //     return function (c) {
+  //       return function (d) {
+  //         console.log(a + b + c + d);
+  //       }
+  //     }
+  //   }
+  //   // return (b) => {
+  //   //   return (c) => {
+  //   //     return (d) => {
+  //   //       console.log(a + b + c + d);
+  //   //     }
+  //   //   }
+  //   // }
+  // }
+
+  // sum(2)(3)(4)(5)
+
+  // let obj = {
+  //   name: "Syed Manahil",
+  //   age: 23
+  // }
+
+  // for (const key in obj) {
+  //   console.log(key);
+  // }
+  // for (const key of obj) {
+  //   console.log(key);
+  // }
+
+  // function sum(a, b) {
+  //   console.log(a);
+  // }
+
+  // sum(2, 3)
+
+  // const names = ["Syed", "Manahil", "Tanwir"]
+
+  // for (const element in names) {
+  //   // console.log(names[element])
+  //   console.log(element)
+  // }
+
+  // for (const element of names) {
+  //   console.log(element)
+  // }
+
+  // const getSum = (a) => (b) => (c) => (d) => (e) => console.log(a + b + c + d + e)
+
+  // getSum(5)(4)(3)(2)(1)
+
+  // let date = new Date()
+
+  // // let noOfMilliSecondsInAMonth = date.getTime() - 7 * 24 * 60 * 60 * 1000
+
+  // let lastMonthsDate = new Date(
+  //   date.getFullYear(),
+  //   date.getMonth() - 1,
+  //   // date.getDay(),
+  //   date.getDate(),
+  //   date.getHours(),
+  //   date.getMinutes(),
+  //   date.getSeconds(),
+  //   date.getMilliseconds()
+  // )
+
+  // console.log(date);
+  // console.log(lastMonthsDate);
+
+  // let date = new Date()
+
+  // let noOfMilliSecondsInAWeek = date.getTime() - 7 * 24 * 60 * 60 * 1000
+
+  // let lastWeeksDate = new Date(noOfMilliSecondsInAWeek)
+
+  // console.log(date);
+  // console.log(lastWeeksDate);
+
+  // let array = [1, 2, 2, 1, 70, 4, 5, 6, 6]
+
+  // let myArr = []
+
+  // let highestEle = array[0];
+
+  // let index = 0
+
+  // let sum = 0
+
+  // for (let i = 0; i < array.length; i++) {
+  //   const elementOne = array[i];
+  //   sum += elementOne
+  //   let isDuplicate = false
+  //   for (let j = 0; j < myArr.length; j++) {
+  //     const elementTwo = myArr[j];
+  //     if (elementOne === elementTwo) {
+  //       isDuplicate = true
+  //     }
+  //   }
+  //   if (elementOne > highestEle) {
+  //     highestEle = elementOne
+  //     index = i
+  //   }
+  //   if (!isDuplicate) {
+  //     myArr[myArr.length] = elementOne
+  //   }
+  // }
+
+  // console.log(index);
+  // console.log(sum);
+  // console.log(highestEle);
+  // console.log(myArr);
+
+  // let vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  // function checkIsVowelExist(param) {
+  //   const string = param.toString().toLowerCase()
+  //   let isVowelExists = false
+  //   for (let i = 0; i < vowels.length; i++) {
+  //     const elementOne = vowels[i];
+  //     for (let j = 0; j < string.length; j++) {
+  //       const elementTwo = string[j];
+  //       if (elementOne === elementTwo) {
+  //         isVowelExists = true
+  //         break
+  //       }
+  //     }
+  //     if (isVowelExists) {
+  //       break
+  //     }
+  //   }
+  //   if (isVowelExists) {
+  //     console.log("Yes");
+  //   } else {
+  //     console.log("No");
+  //   }
+  // }
+
+  // checkIsVowelExist("W")
+
+  // function checkVowel(param) {
+  //   let string = param.toString().toLowerCase();
+  //   let isVowelExists = false;
+  //   for (let i = 0; i < vowels.length; i++) {
+  //     const elementOne = vowels[i];
+  //     for (let j = 0; j < string.length; j++) {
+  //       const elementTwo = string[j];
+  //       if (elementOne === elementTwo) {
+  //         isVowelExists = true
+  //         break
+  //       }
+  //     }
+  //     if (isVowelExists) {
+  //       break
+  //     }
+  //   }
+  //   if (isVowelExists) {
+  //     console.log("Yes");
+  //   } else {
+  //     console.log("No");
+  //   }
+  // for (let i = 0; i < vowels.length; i++) {
+  //   const vowel = vowels[i];
+  //   for (let j = 0; j < string.length; j++) {
+  //     const char = string[j];
+  //     if (vowel === char) {
+  //       isVowelExists = true;
+  //       break; // Exit the inner loop once a vowel is found
+  //     }
+  //   }
+  //   if (isVowelExists) {
+  //     break; // Exit the outer loop once a vowel is found
+  //   }
+  // }
+  // if (isVowelExists) {
+  //   console.log('Yes');
+  // } else {
+  //   console.log('No');
+  // }
+  // }
+
+  // checkVowel('W');
 
   // let vowels = ['a', 'e', 'i', "o", "u"]
 
@@ -59,7 +478,6 @@ const Page = () => {
   // }
 
   // checkVowel("hello")
-
 
   // let array = [1, 2, 2, 1, 4, 5, 6, 6]
 
@@ -238,7 +656,6 @@ const Page = () => {
 
   // checkPalindrome(121)
 
-
   // function fibonacciSeries(argOne, argTwo) {
   //   let firstNum = argOne
   //   let secondNum = argTwo
@@ -331,13 +748,10 @@ const Page = () => {
   //   }
   // }
 
-
   // console.log(myNewArr, "remove duplicated array");
   // console.log(sum, "sum");
   // console.log(highestEle, "highest element");
   // console.log(index, 'index of new array');
-
-
 
   // let finalArr = []
 
@@ -370,7 +784,6 @@ const Page = () => {
   // }
 
   // console.log(finalArr);
-
 
   // let array = [1, 2, 2, 3, 3, 3, 4, 45, 4, 6, 456, 453]
 
@@ -671,7 +1084,7 @@ const Page = () => {
   // // console.log(arr);
   // console.log(newArr);
 
-  // find 
+  // find
 
   // for (let i = 0; i < arrOne.length; i++) {
   //   let isDuplicate = false
@@ -714,7 +1127,6 @@ const Page = () => {
   //   sum = sum * i
   // }
   // console.log(sum);
-
 
   // let checkNum = 5
 
@@ -4889,40 +5301,46 @@ const Page = () => {
 
   return (
     <>
+      {/* <div style={{ width: "500px", height: "500px", background: "red" }} onClick={() => console.log("Clicked Red")}>
+        <div style={{ width: "100px", height: "100px", padding: "100px", background: "blue" }} onClick={(e) => {
+          e.stopPropagation()
+          console.log("Clicked Blue")
+        }}></div>
+      </div> */}
       {/* <button onClick={() => throttleFunc()}>Submit</button> */}
       {/* <input type="text" value={text} /> */}
       {/* <button>{initialState ? "OK" : "Not Ok"}</button>
-      <NestedComp updatedState={updatedState} /> */}
+        <NestedComp updatedState={updatedState} /> */}
       {/* <div
-        style={{
-          position: "fixed",
-          width: "20px",
-          height: "20px",
-          borderRadius: "50%",
-          border: "2px solid yellow",
-          // backgroundColor: "yellow", // Change the background color as needed
-          transform: `translate(${cursorPosition.x - 10}px, ${
-            cursorPosition.y - 10
-          }px)`,
-          pointerEvents: "none", // Prevent the cursor from interfering with elements
-        }}
-      ></div> */}
+          style={{
+            position: "fixed",
+            width: "20px",
+            height: "20px",
+            borderRadius: "50%",
+            border: "2px solid yellow",
+            // backgroundColor: "yellow", // Change the background color as needed
+            transform: `translate(${cursorPosition.x - 10}px, ${
+              cursorPosition.y - 10
+            }px)`,
+            pointerEvents: "none", // Prevent the cursor from interfering with elements
+          }}
+        ></div> */}
       {/* <h1
-        id="1"
-        onClick={() =>
-          window.addEventListener("mousedown", (e) => {
-            if (e.button == 0) {
-              document.getElementById("1").style.background = "red";
-            } else if (e.button == 1) {
-              document.getElementById("1").style.background = "green";
-            } else {
-              document.getElementById("1").style.background = "yellow";
-            }
-          })
-        }
-      >
-        hello
-      </h1> */}
+          id="1"
+          onClick={() =>
+            window.addEventListener("mousedown", (e) => {
+              if (e.button == 0) {
+                document.getElementById("1").style.background = "red";
+              } else if (e.button == 1) {
+                document.getElementById("1").style.background = "green";
+              } else {
+                document.getElementById("1").style.background = "yellow";
+              }
+            })
+          }
+        >
+          hello
+        </h1> */}
     </>
   );
 };
