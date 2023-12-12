@@ -11,6 +11,79 @@ import { Fragment } from "react";
 
 const Page = () => {
 
+  // let object = {
+  //   name: "Syed Manahil",
+  //   age: 23
+  // }
+
+  // for (const iterator of object) {
+  //   console.log(object[iterator])
+  // }
+
+  // let a = 1
+
+  // let b = 2
+
+  // let c = a
+
+  // a = b
+  // b = c
+  // console.log(a, b);
+
+  // a = a + b // 3
+
+  // b = a - b // 1
+
+  // a = a - b
+
+  // console.log(a, b);
+
+
+  // let c = a
+
+  // a = b
+
+  // b = c
+
+  // console.log(a, b);
+
+  // function recursiveFunc(times) {
+  //   if (times > 0) {
+  //     console.log("10 Times", times);
+  //     recursiveFunc(times - 1)
+  //   }
+  // }
+
+  // recursiveFunc(10)
+
+  // const arr = [
+  //   ["name", "Manahil"],
+  //   ['age', "26"]
+  // ]
+
+  // const obj = Object.fromEntries(arr)
+  // console.log(obj);
+
+  // const obj = {
+  //   name: "Manahil",
+  //   age: 25,
+  //   degree: undefined,
+  //   position: null
+  // }
+
+  // let newObj = {}
+
+  // for (const key in obj) {
+  //   if (obj[key] == undefined || obj[key] == null) {
+  //     delete obj[key]
+  //   }
+  // }
+
+  // newObj = obj
+
+
+  // console.log(newObj);
+
   // let data = [
   //   {
   //     name: "Syed Manahil",
