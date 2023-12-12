@@ -1,5 +1,9 @@
 // Palindrome Function
 // check greatest elements in the given array , also sum all the values in an array and find the index of the greatest element in the array
+// check secondHighestEle in an array
+// swap the numbers
+// reduce method
+
 // check lowest elements in the given array , also subtract all the values in an array and find the index of the lowest element in the array
 // last week date
 // Function currying

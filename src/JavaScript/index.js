@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../redux/Actions/customer.action";
+import { Fragment } from "react";
 
 // const dispatch = useDispatch();
 // useEffect(() => {
@@ -9,6 +10,327 @@ import { fetchData } from "../redux/Actions/customer.action";
 // let data = useSelector((state) => state?.customers?.data[0]);
 
 const Page = () => {
+
+  // let data = [
+  //   {
+  //     name: "Syed Manahil",
+  //     id: 1
+  //   },
+  //   {
+  //     name: "Naveed Abbas",
+  //     id: 2
+  //   },
+  //   {
+  //     name: "Mehboob Khan",
+  //     id: 2
+  //   },
+  // ]
+
+  // data.every((item) => console.log(item.hasOwnProperty("firstName")))
+
+  // const [firstData, setFirstData] = useState(data)
+
+
+  // const [input, setInput] = useState("")
+
+  // function settingItem() {
+  //   setFirstData((prevData) => [...prevData, { name: input }])
+  //   setInput('')
+  // }
+
+  // function removeItem(index) {
+  //   setFirstData((preData) => {
+  //     const updatedData = preData.filter((_, idx) => idx !== index)
+  //     return updatedData
+  //   })
+  // }
+
+  // const [firstData, firstSetData] = useState()
+  // const [value, setValue] = useState({})
+
+  // useEffect(() => {
+  //   getData()
+  // }, [])
+
+  // function getData() {
+  //   firstSetData(JSON.parse(window.localStorage.getItem("data")))
+  // }
+
+  // function settingItem() {
+
+  //   let newData = {
+  //     name: "Syed Manahil"
+  //   }
+
+  //   firstSetData((prevData) => {
+  //     const updatedData = [...prevData || [], newData];
+  //     window.localStorage.setItem("data", JSON.stringify(updatedData));
+  //     return updatedData;
+  //   });
+  // }
+
+  // const removeItem = (index) => {
+  //   const updatedData = [...firstData]
+  //   window.localStorage.setItem('data', JSON.stringify(updatedData.filter((_, idx) => idx !== index)))
+  //   firstSetData(updatedData.filter((_, idx) => idx !== index))
+  // }
+
+  // function updateData(index) {
+  //   const data = [...firstData]
+  //   data.splice(index, 1, { name: value[index] })
+  //   firstSetData(data)
+  //   window.localStorage.setItem("data", JSON.stringify(data))
+  // }
+
+  // async function test() {
+  //   console.log("ONe")
+  //   await console.log("Two")
+  //   console.log("Three");
+  // }
+
+  // test()
+
+  // function testTwo() {
+  //   console.log("two")
+  //   console.log("================");
+  // }
+
+  // testTwo()
+
+  // let vowels = ['a', 'e', 'i', 'o', 'u']
+
+  // function checkIsVowelExists(param) {
+  //   if (!param.length) {
+  //     return console.log("Params Not Found")
+  //   }
+  //   let isVowelExists = false
+  //   for (let i = 0; i < vowels.length; i++) {
+  //     const element = vowels[i];
+  //     for (let j = 0; j < param.length; j++) {
+  //       const elementTwo = param[j];
+  //       if (element === elementTwo) {
+  //         isVowelExists = true
+  //         break
+  //       }
+  //     }
+  //   }
+  //   if (isVowelExists) {
+  //     console.log("Vowel Exist");
+  //   } else console.log("Vowel Doesn't Exist")
+  // }
+
+  // checkIsVowelExists("")
+
+  // let a = 10 // 30
+
+  // let b = 20; // 20
+
+  // a = a + b
+
+  // b = a - b
+
+  // a = a - b
+
+  // console.log(a, b);
+
+  // let c = a
+
+  // a = b
+
+  // b = c
+
+  // console.log(a, b);
+
+  // let c = a + b
+
+  // b = c - b
+
+  // a = c - a
+
+  // console.log(a, b);
+
+  // a = a + b // 10 + 20 = 30
+  // b = a - b // 30 - 20 = 10
+  // a = a - b // 30 - 10 = 20
+  // console.log(a, b);
+
+  // [a, b] = [b, a]
+
+  // console.log(a, b);
+
+
+  // let firstNum = 0
+  // let secondNum = 1
+  // let sum
+
+  // function fibonacciSeries(times) {
+  //   if (times > 0) {
+  //     sum = firstNum + secondNum
+  //     firstNum = secondNum
+  //     secondNum = sum
+  //     console.log(sum);
+  //     fibonacciSeries(times - 1)
+  //   }
+  // }
+
+  // fibonacciSeries(5)
+
+  // function fibonacci(times) {
+  //   if (times > 0) {
+  //     sum = firstNum + secondNum
+  //     firstNum = secondNum
+  //     secondNum = sum
+  //     console.log(sum);
+  //     fibonacci(times - 1)
+  //   }
+  // }
+
+  // fibonacci(5)
+
+
+  // let c = a + b // 300
+  // a = c - a
+  // b = c - b
+  // console.log(a, b);
+
+
+  // let arr = [8, 2, 5, 5, 500];
+
+  // let myArr = [];
+
+  // let secondHighestEle = 0
+
+  // let highestEle = 0
+
+  // let indexOfHighestEle = 0
+
+  // let indexOfLowestEle = 0
+
+  // let sum = 0
+
+  // let lowestEle = arr[0]
+
+  // for (let i = 0; i < arr.length; i++) {
+  //   const element = arr[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < myArr.length; j++) {
+  //     const elementTwo = myArr[j];
+  //     if (element === elementTwo) {
+  //       isDuplicate = true
+  //     }
+  //     if (element > elementTwo) {
+  //       highestEle = element
+  //       indexOfHighestEle = i
+  //     }
+  //     if (element < lowestEle) {
+  //       lowestEle = element
+  //       indexOfLowestEle = i
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     sum += element
+  //     myArr[myArr.length] = element
+  //   }
+  //   for (let k = 0; k < myArr.length; k++) {
+  //     const elementThree = myArr[k];
+  //     if (elementThree < highestEle && elementThree > secondHighestEle) {
+  //       secondHighestEle = elementThree
+  //     }
+  //   }
+  // }
+
+  // console.log(highestEle);
+  // console.log(indexOfHighestEle);
+  // console.log(lowestEle);
+  // console.log(indexOfLowestEle);
+  // console.log(myArr);
+  // console.log(secondHighestEle);
+  // console.log(sum);
+
+
+  // let arr = [8, 2, 5, 5, 500];
+
+  // let myArr = [];
+
+  // let highestEle;
+
+  // let secondHighestEle = 0
+
+  // let sum = 0
+
+  // for (let i = 0; i < arr.length; i++) {
+  //   const elementOne = arr[i];
+  //   highestEle = arr[0]
+  //   let isDuplicate = false;
+  //   for (let j = 0; j < myArr.length; j++) {
+  //     const elementTwo = myArr[j];
+  //     if (elementOne === elementTwo) {
+  //       isDuplicate = true;
+  //     }
+  //     if (elementOne > highestEle) {
+  //       highestEle = elementOne
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     myArr[myArr.length] = elementOne;
+  //     sum += elementOne
+  //   }
+  // }
+
+  // for (let i = 0; i < myArr.length; i++) {
+  //   const element = myArr[i];
+  //   if (element < highestEle && element > secondHighestEle) {
+  //     secondHighestEle = element
+  //   }
+  // }
+
+  // for (let i = 0; i < myArr.length; i++) {
+  //   const element = myArr[i];
+  //   if (element < highestEle && element > secondHighestEle) {
+  //     secondHighestEle = element;
+  //   }
+  // }
+
+  // console.log(sum, " Sum Of Array Without (Duplicate)");
+  // console.log(highestEle, ' Highest Element Of An Array');
+  // console.log(myArr, ' Array Without Duplicates');
+  // console.log(secondHighestEle, ' Second Highest Element Of An Array');
+
+  // function runTenTimes(times) {
+  //   if (times > 0) {
+  //     console.log("OK");
+  //     runTenTimes(times - 1);
+  //   }
+  // }
+
+  // runTenTimes(10);
+
+  // const a = [8, 2, 5, 5];
+
+  // let b = a.reduce((accum, currVal) => accum * currVal);
+
+  // console.log(b);
+
+  // const threeDArray = [
+  //   [
+  //     [1, 2, 3],
+  //     [4, 5, 6],
+  //     [7, 8, 9],
+  //   ],
+  //   [
+  //     [10, 11, 12],
+  //     [13, 14, 15],
+  //     [16, 17, 18],
+  //   ],
+  //   [
+  //     [19, 20, 21],
+  //     [22, 23, 24],
+  //     [25, 26, 27],
+  //   ],
+  // ];
+
+  // console.log(threeDArray.flat(2));
+
   //   debugger
   //   setTimeout(() => {
   //   debugger
@@ -146,7 +468,7 @@ const Page = () => {
   //   }
   // }
 
-  // // Call the function 10 times
+  // Call the function 10 times
   // callFunction(10);
 
   // const times = 10;
@@ -5301,6 +5623,23 @@ const Page = () => {
 
   return (
     <>
+      {/* <input type="text" onChange={(e) => setInput(e.target.value)} value={input} />
+      <button onClick={() => settingItem()}>submit</button>
+      {firstData?.map((ele, index) => {
+        return (
+          <Fragment key={index}>
+            <h1>{ele.name}</h1>
+            <button onClick={() => {
+              removeItem(index)
+            }}>delete</button>
+            <input type="text" onChange={(e) => {
+              console.log(e.target.value)
+            }}
+            />
+            <button type="submit" >Update</button>
+          </Fragment>
+        )
+      })} */}
       {/* <div style={{ width: "500px", height: "500px", background: "red" }} onClick={() => console.log("Clicked Red")}>
         <div style={{ width: "100px", height: "100px", padding: "100px", background: "blue" }} onClick={(e) => {
           e.stopPropagation()
