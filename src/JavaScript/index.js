@@ -11,6 +11,165 @@ import { Fragment } from "react";
 
 const Page = () => {
 
+  for (let i = 1; i < 10; i++) {
+    for (let j = i; j < i; j++) {
+      console.log('*');
+    }
+    console.log("\n");
+  }
+
+  // let name = "Manahil"
+
+  // let a = name.length
+
+  // let reverseName = "";
+
+  // for (let i = a - 1; i >= 0; i--) {
+  //   reverseName += name[i]
+  // }
+
+  // console.log(reverseName);
+
+  // function checkPalindrome(str) {
+  //   let reversedStr = ""
+  //   for (let i = str.length - 1; i >= 0; i--) {
+  //     const element = str[i];
+  //     reversedStr += element
+  //   }
+  //   if (reversedStr == str) {
+  //     console.log("Palindrome");
+  //   } else {
+  //     console.log("Not Palindrome");
+  //   }
+  // }
+
+  // checkPalindrome("NON")
+
+
+  // const obj = {
+  //   firstName: "Naveed",
+  //   lastName: "Abbas",
+  //   getFullName(city, state) {
+  //     console.log(this.firstName + " " + this.lastName + " " + city + " " + state)
+  //   }
+  // }
+
+  // const objTwo = {
+  //   firstName: "Syed",
+  //   lastName: "Manahil"
+  // }
+
+  // const returnedFunc = obj.getFullName.bind(objTwo)
+  // returnedFunc("Karachi", "Sindh")
+  // obj.getFullName.bind(obj, "Hyderabad", "Sindh")
+
+  // obj.getFullName.apply(objTwo, ["Karachi", "Sindh"])
+  // obj.getFullName.apply(obj, ["Hyderabad", "Sindh"])
+
+  // obj.getFullName.call(objTwo, "Karachi", "Sindh")
+  // obj.getFullName.call(obj, "Hyderabad", "Sindh")
+
+  // let a = false
+  // let b = '0'
+
+  // console.log(a === b);
+
+  // let a = 32
+
+  // if (true) {
+  //   let a = 0
+  // }
+
+  // console.log(a);
+
+  // function Sum(num) {
+  //   this.num 
+  //   console.log();
+  // }
+
+  // function sum() {
+  //   console.log(arguments);
+  // }
+
+  // const sum = () => {
+  //   console.log(arguments);
+  // }
+
+  // const a = new Car(1)
+
+  // const sum = a => b => c => d => e => console.log(a + b + c + d + e)
+
+  // function sum(a) {
+  //   return (b) => {
+  //     return (c) => {
+  //       return (d) => {
+  //         return (e) => {
+  //           console.log(a + b + c + d + e);
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  // sum(5)(4)(3)(2)(1)
+  // const firstFun = sum(5)
+  // const secondFunc = firstFun(4)
+  // const thirdFunc = secondFunc(3)
+  // const fourthFunc = thirdFunc(2)
+  // fourthFunc(1)
+
+  // async function test() {
+  //   return "OK"
+  // }
+
+  // console.log(test());
+
+  // console.log("First")
+
+  // setTimeout(() => {
+  //   console.log("Second");
+  // }, 0);
+  // setTimeout(() => {
+  //   console.log("Second");
+  // }, 0);
+  // setTimeout(() => {
+  //   console.log("Second");
+  // }, 0);
+  // setTimeout(() => {
+  //   console.log("Second");
+  // }, 0);
+  // setTimeout(() => {
+  //   console.log("Second");
+  // }, 0);
+  // setTimeout(() => {
+  //   console.log("Second");
+  // }, 0);
+  // setTimeout(() => {
+  //   console.log("Second");
+  // }, 0);
+  // setTimeout(() => {
+  //   console.log("Second");
+  // }, 0);
+
+  // console.log("Third");
+
+  // let a = (2 + 3) * "5"
+
+  // console.log(a);
+
+  // const arr = []
+
+  // arr[3] = "First"
+  // arr[7] = "Second"
+
+  // console.log(arr[3]);
+  // console.log(arr[5]);
+  // console.log(arr[7]);
+
+  // let a = false
+  // let b = "0"
+  // console.log(a == b)
+
   // let object = {
   //   name: "Syed Manahil",
   //   age: 23
@@ -4887,30 +5046,30 @@ const Page = () => {
   //     console.log("Rejected", error);
   //   });
 
-  // function promiseFunction(condition) {
-  //   const prom = new Promise((res, rej) => {
-  //     if (condition) {
-  //       return res();
-  //     } else {
-  //       return rej();
-  //     }
-  //   });
-  //   return prom;
-  // }
+  function promiseFunction(condition) {
+    const prom = new Promise((res, rej) => {
+      if (condition) {
+        return res();
+      } else {
+        return rej();
+      }
+    });
+    return prom;
+  }
 
-  // let onResult = (param) => {
-  //   console.log(`Promise is ${param}`);
-  // };
+  let onResult = (param) => {
+    console.log(`Promise is ${param}`);
+  };
 
-  // const test = () => {
-  //   promiseFunction(false)
-  //     .then(() => {
-  //       onResult("FULFILLED");
-  //     })
-  //     .catch(() => {
-  //       onResult("REJECTED");
-  //     });
-  // };
+  const test = () => {
+    promiseFunction(false)
+      .then(() => {
+        onResult("FULFILLED");
+      })
+      .catch(() => {
+        onResult("REJECTED");
+      });
+  };
 
   // function isPromiseSuccessOrFailed(condition) {
   //   const response = new Promise((resolve, reject) => {
