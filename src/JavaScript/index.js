@@ -11,12 +11,110 @@ import { Fragment } from "react";
 
 const Page = () => {
 
-  for (let i = 1; i < 10; i++) {
-    for (let j = i; j < i; j++) {
-      console.log('*');
-    }
-    console.log("\n");
-  }
+  // let a = {
+  //   name: "MAnahil"
+  // }
+
+  // let b = a
+
+  // b.name = "Ahsan"
+
+  // console.log(a.name);
+  // console.log(b.name);
+
+  // let num1 = [1, 2, 2, 1, 3, 4, 5]
+  // let num2 = [2, 2, 3, 5]
+
+  // let myArr = [...num1, ...num2];
+  // console.log("" === "")
+
+  // console.log(typeof {}, typeof []);
+
+
+  // let arr = [1, 2, 3, 4, 40, 4, 4, 4]
+
+  // let myArr = []
+
+  // let sum = 0
+
+  // let greatestEle = arr[0]
+
+  // let greatestIndex = 0
+
+  // for (let i = 0; i < arr.length; i++) {
+  //   const elementOne = arr[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < myArr.length; j++) {
+  //     const elementTwo = myArr[j];
+  //     if (elementOne === elementTwo) {
+  //       isDuplicate = true
+  //     }
+  //     if (greatestEle < elementOne) {
+  //       greatestEle = elementOne
+  //       greatestIndex = i
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     sum += elementOne
+  //     myArr[myArr.length] = elementOne
+  //   }
+  // }
+
+  // console.log(sum);
+  // console.log(greatestIndex);
+  // console.log(greatestEle);
+  // console.log(myArr);
+
+  // console.log("A")
+
+  // setTimeout(() => {
+  //   console.log("b");
+  // }, 0);
+
+  // console.log('C');
+
+  // let a = [1, 2, 3, 1, 1, 1, 3]
+
+  // let b = a.findIndex((ele) => ele === 1)
+
+  // console.log(b);
+
+  // let b = a.find((ele) => ele === 3)
+
+  // console.log(b);
+
+  // function sum(a) {
+  //   return function (b) {
+  //     return function (c) {
+  //       console.log(a + b + c);
+  //     }
+  //   }
+  // }
+
+  // sum(5)(4)(2)
+
+  // let a = 10
+
+  // let b = 20;
+
+  // let c = a + b // 30
+
+  // a = c - a // 30-10 = 20
+
+  // b = c - b // 30-20=10
+
+  // console.log(a, b);
+
+  // [a, b] = [b, a]
+
+  // console.log(a, b);
+
+  // for (let i = 1; i < 10; i++) {
+  //   for (let j = i; j < i; j++) {
+  //     console.log('*');
+  //   }
+  //   console.log("\n");
+  // }
 
   // let name = "Manahil"
 
@@ -426,6 +524,13 @@ const Page = () => {
   // console.log(a, b);
 
 
+  // let arr = []
+
+  // arr[0] = 5
+  // arr[7] = 6
+
+  // console.log(arr[0], arr[5], arr[7]);
+
   // let arr = [8, 2, 5, 5, 500];
 
   // let myArr = [];
@@ -450,17 +555,17 @@ const Page = () => {
   //     if (element === elementTwo) {
   //       isDuplicate = true
   //     }
-  //     if (element > elementTwo) {
-  //       highestEle = element
-  //       indexOfHighestEle = i
-  //     }
-  //     if (element < lowestEle) {
-  //       lowestEle = element
-  //       indexOfLowestEle = i
-  //     }
+  //     // if (element > elementTwo) {
+  //     //   highestEle = element
+  //     //   indexOfHighestEle = i
+  //     // }
+  //     // if (element < lowestEle) {
+  //     //   lowestEle = element
+  //     //   indexOfLowestEle = i
+  //     // }
   //   }
   //   if (!isDuplicate) {
-  //     sum += element
+  //     // sum += element
   //     myArr[myArr.length] = element
   //   }
   //   for (let k = 0; k < myArr.length; k++) {
