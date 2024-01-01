@@ -11,6 +11,324 @@ import { Fragment } from "react";
 
 const Page = () => {
 
+  // const a = new Promise((res, rej) => {
+  // })
+
+  // console.log(a);
+
+  // async function name() {
+  //   return "Hello"
+  // }
+
+  // console.log(name());
+
+  // for (let i = 1; i < 10; i++) {
+  //   console.log(`2 x ${i} = ${i * 2}`);
+  // }
+
+  // const sum = (a) => (b) => (c) => (d) => console.log(a + b + c + d);
+
+  // function sum(a, b, c, d) {
+  //   console.log(a, b, c, d);
+  // }
+
+  // function sum(a) {
+  //   return function (b) {
+  //     return function (c) {
+  //       return function (d) {
+  //         console.log(a + b + c + d);
+  //       }
+  //     }
+  //   }
+  // }
+
+  // sum(4)(3)(2)(1)
+
+  // function recursiveFunc(times) {
+  //   if (times > 0) {
+  //     console.log(times);
+  //     recursiveFunc(times - 1)
+  //   }
+  // }
+
+  // recursiveFunc(10)
+
+  // let firstNum = 0;
+  // let secondNum = 1;
+
+  // let sum = 0;
+
+  // (function () {
+  //   for (let i = 0; i < 5; i++) {
+  //     sum = firstNum + secondNum;
+  //     firstNum = secondNum;
+  //     secondNum = sum;
+  //     console.log(sum);
+  //   }
+  // })();
+
+  // const objOne = {
+  //   firstName: "Syed",
+  //   lastName: "Manahil",
+  // };
+
+  // const objTwo = {
+  //   firstName: "Maaz",
+  //   lastName: "Khan",
+  // };
+
+  // function printFullName(city, state) {
+  //   console.log(`${this.firstName} ${this.lastName} from ${city}, ${state}`);
+  // }
+
+  // const returnedFunc = printFullName.bind(objOne, 'Karachi')
+  // returnedFunc("PK")
+
+  // printFullName.apply(objOne, ["Karachi", "PK"])
+  // printFullName.apply(objOne, ["Hyderabad", "PK"])
+
+  // printFullName.call(objOne, "Karachi", 'PK')
+  // printFullName.call(objTwo, "Hyderabad", 'PK')
+
+  // const currentDate = new Date()
+
+  // let noOfMilliSecondsInAWeek = currentDate.getTime() - 7 * 24 * 60 * 60 * 1000
+
+  // let lastMonthsDate = new Date(
+  //   currentDate.getFullYear(),
+  //   currentDate.getMonth() - 1,
+  //   currentDate.getDate(),
+  //   currentDate.getHours(),
+  //   currentDate.getMinutes(),
+  //   currentDate.getSeconds(),
+  //   currentDate.getMilliseconds()
+  // )
+
+  // console.log(currentDate);
+  // console.log(lastMonthsDate);
+
+  // let a = [1, 299, 300, 1, 1, 1, 3, 3, -2]
+
+  // let lowestEle = Infinity
+
+  // for (let i = 0; i < a.length; i++) {
+  //   const element = a[i];
+  //   if (element < lowestEle) {
+  //     lowestEle = element
+  //   }
+  // }
+
+  // console.log(lowestEle);
+
+  // let a = 100
+  // let b = 200;
+
+  // a = a + b  // 300
+
+  // b = a - b // 300 - 200 = 100
+
+  // a = a - b
+
+  // console.log(a, b);
+
+  // let c = a + b // 300
+
+  // a = c - a // 300 - 100 = 200
+
+  // b = c - a // 300 - 200 = 100
+
+  // console.log(a, b);
+
+  // [a, b] = [b, a]
+  // console.log(a, b);
+
+  // var first = 10
+  // var second = 20
+
+  // [first, second] = [second, first]
+
+  // console.log(first);
+
+  // let a = [1, 299, 300, 1, 1, 1, 3, 3]
+
+  // let b = []
+
+  // let greatestEle = 0
+
+  // let indexOfGreatestEle = 0
+
+  // let sum = 0
+
+  // for (let i = 0; i < a.length; i++) {
+  //   const element = a[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < b.length; j++) {
+  //     const elementTwo = b[j];
+  //     if (element === elementTwo) {
+  //       isDuplicate = true
+  //     }
+  //     if (element > greatestEle) {
+  //       greatestEle = element
+  //       indexOfGreatestEle = i
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     b[b.length] = element
+  //   }
+  //   sum += element
+  // }
+
+  // console.log(b);
+  // console.log(greatestEle);
+  // console.log(indexOfGreatestEle);
+  // console.log(sum);
+
+  // let newArr = []
+
+  // a.map((ele) => {
+  //   if (!newArr.includes(ele)) {
+  //     newArr.push(ele)
+  //   }
+  // })
+
+  // console.log(newArr);
+
+  // a.filter((item) => {
+  //   if (!newArr.includes(item)) {
+  //     newArr.push(item)
+  //   }
+  // })
+
+  // console.log(newArr);
+
+  // let b = []
+
+  // for (let i = 0; i < a.length; i++) {
+  //   const element = a[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < b.length; j++) {
+  //     const elementTwo = b[j];
+  //     if (element === elementTwo) {
+  //       isDuplicate = true
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     b[b.length] = element
+  //   }
+  // }
+
+  // console.log(b);
+
+  // let greatestEle = 0;
+
+  // let sum = 0
+
+  // let index = 0
+
+  // let secondHighestEle = 0
+
+  // let arrWithoutDuplicates = []
+
+  // let sub = 0
+
+  // for (let i = 0; i < a.length; i++) {
+  //   const element = a[i];
+  //   let isDuplicate = false
+  //   for (let j = 0; j < arrWithoutDuplicates.length; j++) {
+  //     const elementTwo = arrWithoutDuplicates[j];
+  //     if (element === elementTwo) {
+  //       isDuplicate = true
+  //     }
+  //   }
+  //   if (!isDuplicate) {
+  //     arrWithoutDuplicates[arrWithoutDuplicates.length] = element
+  //   }
+  //   if (element > greatestEle) {
+  //     secondHighestEle = greatestEle
+  //     greatestEle = element
+  //     index = i
+  //   }
+  //   else if (element > secondHighestEle && element < greatestEle) {
+  //     secondHighestEle = element
+  //   }
+  //   sum += element
+  //   sub -= element
+  // }
+
+  // console.log(greatestEle);
+  // console.log(sum);
+  // console.log(sub);
+  // console.log(index);
+  // console.log(secondHighestEle);
+  // console.log(arrWithoutDuplicates);
+
+  // function palindromeFunc(params) {
+  //   if (typeof params !== 'string' || true) {
+  //     params = params.toString().toLowerCase()
+  //   }
+  //   const isPalindrome = params.split("").reverse().join("").toString()
+  //   if (isPalindrome === params) {
+  //     console.log("Palindrome")
+  //   } else {
+  //     console.log("Not Palindrome")
+  //   }
+  // }
+
+  // palindromeFunc("")
+
+  // const name = function () {
+  //   console.log("OK");
+  // }
+
+  // name()
+
+  // const name = () => {
+  //   console.log("Hello");
+  // }
+
+  // name()
+
+  // (function () {
+  //   console.log("HEllo");
+  // })()
+
+  // let firstNum = 0
+
+  // let secondNum = 1
+
+  // let sum;
+
+  // (function () {
+  //   for (let i = 0; i < 5; i++) {
+  //     sum = firstNum + secondNum
+  //     firstNum = secondNum
+  //     secondNum = sum
+  //     console.log(sum);
+  //   }
+  // })()
+
+  // let arr = [1, 2, 3, 4]
+
+  // let secArr = arr
+
+  // secArr.length = 0
+
+  // console.log(arr, secArr);
+
+  // function curryingFunc(){
+
+  // }
+
+  // curryingFunc()
+
+  // let arr = [1, 2, 3, 4]
+
+  // let arrTwo = arr
+
+  // arrTwo[0] = 5
+
+  // console.log(arr, arrTwo);
+
   // let a = {
   //   name: "MAnahil"
   // }
@@ -29,7 +347,6 @@ const Page = () => {
   // console.log("" === "")
 
   // console.log(typeof {}, typeof []);
-
 
   // let arr = [1, 2, 3, 4, 40, 4, 4, 4]
 
@@ -143,7 +460,6 @@ const Page = () => {
 
   // checkPalindrome("NON")
 
-
   // const obj = {
   //   firstName: "Naveed",
   //   lastName: "Abbas",
@@ -181,7 +497,7 @@ const Page = () => {
   // console.log(a);
 
   // function Sum(num) {
-  //   this.num 
+  //   this.num
   //   console.log();
   // }
 
@@ -295,7 +611,6 @@ const Page = () => {
 
   // console.log(a, b);
 
-
   // let c = a
 
   // a = b
@@ -338,7 +653,6 @@ const Page = () => {
 
   // newObj = obj
 
-
   // console.log(newObj);
 
   // let data = [
@@ -359,7 +673,6 @@ const Page = () => {
   // data.every((item) => console.log(item.hasOwnProperty("firstName")))
 
   // const [firstData, setFirstData] = useState(data)
-
 
   // const [input, setInput] = useState("")
 
@@ -488,7 +801,6 @@ const Page = () => {
 
   // console.log(a, b);
 
-
   // let firstNum = 0
   // let secondNum = 1
   // let sum
@@ -517,12 +829,10 @@ const Page = () => {
 
   // fibonacci(5)
 
-
   // let c = a + b // 300
   // a = c - a
   // b = c - b
   // console.log(a, b);
-
 
   // let arr = []
 
@@ -583,7 +893,6 @@ const Page = () => {
   // console.log(myArr);
   // console.log(secondHighestEle);
   // console.log(sum);
-
 
   // let arr = [8, 2, 5, 5, 500];
 
@@ -5151,30 +5460,32 @@ const Page = () => {
   //     console.log("Rejected", error);
   //   });
 
-  function promiseFunction(condition) {
-    const prom = new Promise((res, rej) => {
-      if (condition) {
-        return res();
-      } else {
-        return rej();
-      }
-    });
-    return prom;
-  }
+  // function promiseFunction(condition) {
+  //   const prom = new Promise((res, rej) => {
+  //     if (condition) {
+  //       return res();
+  //     } else {
+  //       return rej();
+  //     }
+  //   });
+  //   return prom;
+  // }
 
-  let onResult = (param) => {
-    console.log(`Promise is ${param}`);
-  };
+  // let onResult = (param) => {
+  //   console.log(`Promise is ${param}`);
+  // };
 
-  const test = () => {
-    promiseFunction(false)
-      .then(() => {
-        onResult("FULFILLED");
-      })
-      .catch(() => {
-        onResult("REJECTED");
-      });
-  };
+  // const test = () => {
+  //   promiseFunction(false)
+  //     .then(() => {
+  //       onResult("FULFILLED");
+  //     })
+  //     .catch(() => {
+  //       onResult("REJECTED");
+  //     });
+  // };
+
+  // test()
 
   // function isPromiseSuccessOrFailed(condition) {
   //   const response = new Promise((resolve, reject) => {
@@ -5691,11 +6002,16 @@ const Page = () => {
   // console.log(a);
 
   // const a = [20, 24, 35];
+  // const a = [20, 24, 35];
+  // a = []
+  // console.log(a);
   // a[2] = 30;
   // console.log(a);
 
   // const a = new Object();
-  // a.firstName = "Syed ";
+
+  // // console.log(a);
+  // a.firstName = "Syed";
   // a.lastName = "Manahil";
   // const { firstName, lastName } = a;
   // console.log(firstName, lastName);
@@ -5857,11 +6173,11 @@ const Page = () => {
   //   } while (i < 10);
   //  While Loop Example Of Table
 
-  //   let j = 1;
-  //   while (j <= 10) {
-  //     console.log(`3 x ${j} = ${j * 2}`);
-  //     j++;
-  //   }
+  // let j = 1;
+  // while (j <= 10) {
+  //   console.log(`3 x ${j} = ${j * 3}`);
+  //   j++;
+  // }
   //   let i = 0;
   //   while (i <= 10) {
   //     console.log(i);
