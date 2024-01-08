@@ -11,6 +11,421 @@ import { Fragment } from "react";
 
 const Page = () => {
 
+  // const arr = [1, 2, 3, 4, 5]
+
+  // // const newArr = arr.find((ele) => ele > 2)
+
+  // const newArr = arr.findIndex((ele) => ele > 2)
+
+  // console.log(newArr);
+
+  // console.log(newArr);
+
+  // let originalArr = [
+  //   1, 2, 3,
+  //   [4, 6]
+  // ]
+
+  // function deepCopy(arr) {
+  //   return arr.map((ele) => {
+  //     if (typeof ele === 'object') {
+  //       return deepCopy(ele)
+  //     } else {
+  //       return ele
+  //     }
+  //   })
+  // }
+
+  // const deepCopyArr = deepCopy(originalArr)
+  // deepCopyArr[3][0] = 999
+  // console.log(deepCopyArr, originalArr);
+
+  // function deepCopy(arr) {
+  //   let newArr = []
+  //   for (let i = 0; i < arr.length; i++) {
+  //     const element = arr[i]
+  //     newArr[i] = typeof element === 'object' ? deepCopy(element) : element
+  //   }
+  //   return newArr
+  // }
+
+  // const deepCopyArr = deepCopy(originalArr)
+  // deepCopyArr[3][0] = 9999;
+
+  // console.log(deepCopyArr, originalArr);
+
+  // const originalObject = {
+  //   a: 1,
+  //   b: {
+  //     c: 2,
+  //     d: 3
+  //   }
+  // };
+
+  // function deepCopy(obj) {
+  //   let newObj = {}
+  //   for (const key in obj) {
+  //     const element = obj[key]
+  //     newObj[key] = typeof obj === "object" ? deepCopy(element) : element
+  //   }
+  //   return newObj
+  // }
+
+  // const deepCopyObj = deepCopy(originalObject)
+  // deepCopyObj.b.c = 99999
+
+  // console.log(deepCopyObj, originalObject);
+
+  // const deepCopyObj = JSON.parse(JSON.stringify(originalObject))
+  // deepCopyObj.b.c = 99999999
+
+  // console.log(originalObject, deepCopyObj);
+
+  // const shallowCopyObject = { ...originalObject }
+
+  // shallowCopyObject.b.c = 99999999999
+
+  // console.log(shallowCopyObject, originalObject);
+
+  // let originalArr = [
+  //   1, 2, 3,
+  //   [4, 6]
+  // ]
+
+  // function deepCopy(arr) {
+  //   let newArr = []
+  //   for (let i = 0; i < arr.length; i++) {
+  //     const element = arr[i];
+  //     newArr[i] = typeof element === "object" ? deepCopy(element) : element
+  //   }
+  //   return newArr
+  // }
+
+  // let deepCopyArr = deepCopy(originalArr)
+  // deepCopyArr[3][0] = 99999
+
+  // console.log(deepCopyArr, originalArr);
+
+  // let shallowCopyArr = [...originalArr]
+  // shallowCopyArr[3][0] = 444444444
+
+  // console.log(originalArr, shallowCopyArr);
+
+  // const originalObject = {
+  //   a: 1,
+  //   b: {
+  //     c: 2,
+  //     d: 3
+  //   }
+  // };
+
+  // function deepCopy(object) {
+  //   let newObj = {}
+  //   for (let key in object) {
+  //     const element = object[key]
+  //     newObj[key] = typeof element === "object" ? deepCopy(element) : element
+  //   }
+  //   return newObj
+  // }
+
+  // const deepCopyObj = deepCopy(originalObject)
+
+  // deepCopyObj.b.c = 9999
+
+  // console.clear()
+  // console.log(originalObject, deepCopyObj);
+
+  // function deepCopy(object) {
+  //   let newObj = new Object
+  //   for (const key in object) {
+  //     if (Object.hasOwnProperty.call(object, key)) {
+  //       const element = object[key];
+  //       newObj[key] = typeof element === "object" ? deepCopy(element) : element
+  //     }
+  //   }
+  //   return newObj
+  // }
+
+  // const deepCopyObj = deepCopy(originalObject)
+
+  // deepCopyObj.b.c = 99999
+
+  // console.log(originalObject, deepCopyObj);
+
+  // function deepCopy(obj) {
+  //   const newObj = {}
+  //   for (const key in obj) {
+  //     if (Object.hasOwnProperty.call(obj, key)) {
+  //       const element = obj[key];
+  //       newObj[key] = typeof element === "object" ? deepCopy(element) : element
+  //     }
+  //   }
+  //   return newObj
+  // }
+
+  // const deepCopyObj = deepCopy(originalObject)
+
+  // deepCopyObj.b.c = 999999999
+
+  // console.log(originalObject);
+
+  // console.log(deepCopyObj);
+
+  // function deepCopy(obj) {
+  //   const newObj = {};
+  //   for (const key in obj) {
+  //     if (obj.hasOwnProperty(key)) {
+  //       newObj[key] = typeof obj[key] === 'object' ? deepCopy(obj[key]) : obj[key];
+  //     }
+  //   }
+  //   return newObj;
+  // }
+
+  // const deepCopyObj = deepCopy(originalObject)
+
+  // deepCopyObj.b.c = 9999
+
+  // console.log(originalObject, deepCopyObj);
+
+  // const originalObject = {
+  //   a: 1,
+  //   b: {
+  //     c: 2,
+  //     d: 3
+  //   }
+  // };
+
+  // let shallowCopyObject = { ...originalObject }
+
+  // shallowCopyObject.b.c = 9999
+
+  // console.log(originalObject, shallowCopyObject);
+
+  // let a;
+  // console.log(a == undefined);
+
+  // function deepCopy(obj) {
+  //   const newObj = {};
+  //   for (const key in obj) {
+  //     if (obj.hasOwnProperty(key)) {
+  //       newObj[key] = obj[key];
+  //     }
+  //   }
+  //   return newObj;
+  // }
+
+  // const originalObject = {
+  //   a: 1,
+  //   b: {
+  //     c: 2,
+  //     d: 3
+  //   }
+  // };
+
+  // const shallowCopyObject = deepCopy(originalObject);
+
+  // let a = originalObject
+
+  // a.b.c = 999999
+
+  // console.log(a, shallowCopyObject);
+
+  // console.log(shallowCopyObject);
+
+  // const a = [1, 2, 3, 4, 5]
+
+  // let b = a.filter((ele) => ele != 5)
+
+  // console.log(b);
+
+
+  // console.clear()
+
+  // debugger
+
+  // var a = 'Hello'
+
+  // console.log(window);
+
+  // console.log("A", a);
+
+  // debugger
+
+  // setTimeout(() => {
+  //   debugger
+  //   console.log('B');
+  // }, 0);
+
+  // debugger
+  // console.log('C');
+
+  // debugger
+
+  // setTimeout(() => {
+  //   console.log("Settimeout is Called");
+  // }, 0);
+
+  // debugger
+
+  // a()
+
+  // debugger
+
+  // function a() {
+  //   debugger
+  //   console.log("Function A Is Called");
+  //   b()
+  //   debugger
+  // }
+
+  // function b() {
+  //   debugger
+  //   console.log("Function B Is Called");
+  //   c()
+  // }
+
+  // function c() {
+  //   debugger
+  //   console.log("Function C Is Called");
+  // }
+
+
+  // debugger
+  // console.log(a);
+  // debugger
+  // console.log(b);
+  // debugger
+  // console.log(c);
+
+  // var a = "I AM A"
+
+  // let b = "I AM B"
+
+  // const c = "I AM C"
+
+
+  // const obj = {
+  //   prop: 100,
+  //   name: "Manahil",
+  //   edu: "BS-CS"
+  // };
+
+  // const a = [1, 2, 3, 4, 5, 6, 7]
+
+  // for (const key in a) {
+  //   // const element = a[key];
+  //   console.log(typeof key);
+  // }
+  // for (const key of a) {
+  //   // const element = a[key];
+  //   console.log(typeof key);
+  // }
+
+  // let obj2 = obj
+
+  // obj2.tttt = 200
+
+  // console.log(obj);
+  // console.log(obj2);
+
+  // Random No Generate
+
+  // console.log(Math.floor(Math.random() * 99999999999999999));
+
+  // var d1 = new Date();
+  // var d2 = new Date(d1);
+  // console.log(d1.getTime() === d2.getTime());
+
+  // let a = "hello"
+
+  // console.log(a.charAt(0).toUpperCase());
+
+  // function sum() {
+  //   let sum = 0
+  //   for (let i = 0; i < arguments.length; i++) {
+  //     const element = arguments[i];
+  //     sum += element
+  //   }
+  //   console.log(sum);
+  // }
+
+  // sum(1, 2, 3); // returns 6
+
+
+  // let obj = {
+  //   name: "Manahil"
+  // }
+
+  // console.log("name" in obj);
+
+  // function reverseWords(str) {
+  //   let a = ''
+  //   let b = ''
+  //   for (let i = 0; i < str.length; i++) {
+  //     const element = str[i];
+  //     if (element === " ") {
+  //       a = b + " " + a
+  //       b = ''
+  //     } else {
+  //       b += element
+  //     }
+  //   }
+  //   a = b + " " + a
+  //   return a
+  // }
+
+  // function reverseWords(str) {
+  //   let reversedWords = '';
+  //   let currentWord = '';
+
+  //   for (let i = 0; i < str.length; i++) {
+  //     const element = str[i];
+
+  //     if (element === ' ') {
+  //       reversedWords = currentWord + ' ' + reversedWords;
+  //       currentWord = '';
+  //     } else {
+  //       currentWord += element;
+  //     }
+  //   }
+
+  //   reversedWords = currentWord + ' ' + reversedWords;
+
+  //   return reversedWords.trim();
+  // }
+
+  // const reversedString = reverseWords("I Love Programming");
+  // console.log(reversedString);
+
+
+  // function reverseWords(str) {
+  //   let reversedWords = '';
+  //   let currentWord = ''
+  //   for (let i = 0; i < str.length; i++) {
+  //     const element = str[i];
+  //     if (element === ' ') {
+  //       reversedWords = currentWord + " " + reversedWords
+  //       currentWord = " "
+  //     } else {
+  //       currentWord += element
+  //     }
+  //   }
+  //   reversedWords = currentWord + " " + reversedWords
+  //   return reversedWords
+  //   // console.log(reversedWords, currentWord);
+  // }
+
+  // console.log(reverseWords("I Love Programming"))
+
+
+  // function tehat
+
+  // const obj = new Object()
+
+  // obj.name = "OK"
+
+  // console.log(obj.name);
+
   // const a = new Promise((res, rej) => {
   // })
 
@@ -645,7 +1060,7 @@ const Page = () => {
 
   // let newObj = {}
 
-  // for (const key in obj) {
+  // for (const [key, value] of Object.entries(obj)) {
   //   if (obj[key] == undefined || obj[key] == null) {
   //     delete obj[key]
   //   }
@@ -6274,8 +6689,45 @@ const Page = () => {
 
   // const [text, setText] = useState("");
 
+  // const [message, setMessage] = useState('Hello, React!');
+
+  // const handleButtonClick = () => {
+  //   setMessage('Updated message');
+  // };
+
+  // const MyPureFunctionalComponent = React.memo(({ message }) => {
+  //   console.log('Rendering MyPureFunctionalComponent');
+  //   return <div>{message}</div>;
+  // });
+
+  // const [time, setTime] = useState(new Date())
+
+  // console.log(time);
+
+  // let count = 0;
+
+  // function increment() {
+  //   count += 1
+  //   console.log(count);
+  // }
+
+  // const increment = () => {
+  //   // This won't trigger a re-render
+  //   count += 1;
+  //   console.log(count);
+  // };
+
   return (
     <>
+      {/* <div>
+        <p>Count: {count}</p>
+        <button onClick={increment}>Increment</button>
+      </div> */}
+      {/* <input type="datetime-local" onChange={(e) => setTime(new Date(e.target.value))} /> */}
+      {/* <div>
+        <MyPureFunctionalComponent message={message} />
+        <button onClick={handleButtonClick}>Update Message</button>
+      </div> */}
       {/* <input type="text" onChange={(e) => setInput(e.target.value)} value={input} />
       <button onClick={() => settingItem()}>submit</button>
       {firstData?.map((ele, index) => {
