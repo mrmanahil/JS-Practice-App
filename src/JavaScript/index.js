@@ -11,6 +11,474 @@ import { Fragment } from "react";
 
 const Page = () => {
 
+  // let a = {}
+
+  // let b = { key: "b" }
+
+  // let c = { key: "c" }
+
+  // a[JSON.stringify(b)] = 123
+  // a[c] = 999999
+
+  // console.log(a);
+
+  // let a = {}
+
+  // let b = { key: "b" }
+
+  // let c = { key: "c" }
+
+  // a[b] = 123
+  // a[c] = 999999
+
+  // console.log(a[b]);
+
+  // let nums = {
+  //   a: 20,
+  //   b: 4,
+  //   c: "String",
+  //   sdds: "String",
+  //   dssd: "String",
+  //   sdf: "String",
+  //   f: "String",
+  // }
+
+  // function multiply(params) {
+  //   for (const key in params) {
+  //     if (typeof params[key] === 'number') {
+  //       params[key] = params[key] * 2
+  //     }
+  //   }
+  // }
+
+  // multiply(nums)
+
+  // console.log(nums);
+
+  // function multiply(params) {
+  //   for (const key in params) {
+  //     if (typeof params[key] !== 'number') {
+  //       delete params[key]
+  //     }
+  //   }
+  //   const { a, b } = params
+  //   console.log(a * 2, b * 2)
+  // }
+
+  // multiply(nums)
+
+  // let object = {
+  //   a: "This Is A",
+  //   b: "This Is B",
+  //   a: "This Is Again A"
+  // }
+
+  // console.log(object);
+
+  // let object = {
+  //   name: "Manahil",
+  //   "graduated From": "Ilma University"
+  // }
+
+  // console.log(object['graduated From']);
+
+  // for (var i = 0; i < 3; i++) {
+  //   function closure(i) {
+  //     setTimeout(() => {
+  //       console.log(i);
+  //     }, i * 1000);
+  //   }
+  //   closure(i)
+  // }
+
+  // let originalArr = [
+  //   1, 2, 3,
+  //   [4, 6]
+  // ]
+
+  // const newArr = [...originalArr]
+
+  // // newArr[3][0] = 999
+  // newArr[2] = 999;
+
+  // console.log(originalArr);
+  // console.log(newArr);
+
+  // function deepCopy(arr) {
+  //   return arr.map((ele) => typeof ele === 'object' ? deepCopy(ele) : ele)
+  // }
+
+  // const deepCopyArr = deepCopy(originalArr)
+
+  // deepCopyArr[3][0] = 999
+
+  // console.log(deepCopyArr);
+  // console.log(originalArr);
+
+  // const originalObject = {
+  //   a: 1,
+  //   b: {
+  //     c: 2,
+  //     d: 3
+  //   }
+  // };
+
+  // function deepCopy(object) {
+  //   const newObj = new Object()
+  //   for (const key in object) {
+  //     const element = object[key]
+  //     newObj[key] = typeof element === 'object' ? deepCopy(element) : element
+  //   }
+  //   return newObj
+  // }
+
+  // const deepCopyObj = deepCopy(originalObject)
+
+  // deepCopyObj.b.c = 9999
+
+  // console.log(originalObject);
+  // console.log(deepCopyObj);
+
+  // for (var i = 0; i < 3; i++) {
+  //   (function (i) {
+  //     setTimeout(() => {
+  //       console.log(i);
+  //     }, 0);
+  //   })(i)
+  // }
+
+  // for (let i = 0; i < 3; i++) {
+  //   setTimeout(() => {
+  //     console.log(i);
+  //   }, i * 1000);
+  // }
+
+  // function sumOfInfiniteCurrying(a) {
+  //   return (b) => {
+  //     if (b) return sumOfInfiniteCurrying(a + b)
+  //     return a
+  //   }
+  // }
+
+  // console.log(sumOfInfiniteCurrying(5)(4)(3)(4)());
+
+
+  // function sumOfInfiniteCurrying(a) {
+  //   return function (b) {
+  //     if (b) return sumOfInfiniteCurrying(a + b)
+  //     return a
+  //   }
+  // }
+
+  // console.log(sumOfInfiniteCurrying(1)(2)(3)(4)(5)(6)())
+
+  // function evaluateFn(operation) {
+  //   return (a) => {
+  //     return (b) => {
+  //       if (operation === "mul") console.log(a * b);
+  //       else if (operation === "sub") console.log(a - b);
+  //       else if (operation === "add") console.log(a + b);
+  //       else console.log(a / b);
+  //     }
+  //   }
+  // }
+
+  // evaluateFn("mul")(4)(2)
+  // evaluateFn("add")(4)(2)
+  // evaluateFn("sub")(4)(2)
+  // evaluateFn("div")(4)(2)
+
+  // function recursiveFunc(times) {
+  //   if (times > 0) {
+  //     console.log("current count is ", times);
+  //     recursiveFunc(times - 1)
+  //   }
+  // }
+
+  // recursiveFunc(10)
+
+  // for (var i = 0; i < 3; i++) {
+  //   function closureFn(i) {
+  //     setTimeout(() => {
+  //       console.log(i);
+  //     }, i * 1000);
+  //   }
+  //   closureFn(i)
+  // }
+
+  // for (let i = 0; i < 3; i++) {
+  //   setTimeout(() => {
+  //     console.log(i);
+  //   }, i * 1000);
+  // }
+
+  // for (let i = 0; i < 3; i++) {
+  //   setTimeout(() => {
+  //     console.log(i);
+  //   }, i * 1000);
+  //   console.log(i, 'outer i');
+  // }
+
+  // for (var i = 0; i < 3; i++) {
+  //   (function (i) {
+  //     setTimeout(() => console.log(i), i * 1000)
+  //   })(i)
+  // }
+
+  // for (var i = 0; i < 3; i++) {
+  //   (function (i) {
+  //     setTimeout(() => {
+  //       console.log(i);
+  //     }, i * 1000);
+  //   })(i)
+  // }
+
+  // for (var i = 0; i < 3; i++) {
+  //   setTimeout(() => {
+  //     console.log(i);
+  //   }, i * 1000);
+  // }
+
+  // for (let i = 0; i < 3; i++) {
+  //   setTimeout(() => {
+  //     console.log(i);
+  //   }, i * 1000);
+  // }
+
+  // for (var i = 0; i < 3; i++) {
+  //   setTimeout(() => {
+  //     console.log(i);
+  //   }, i * 1000);
+  // }
+
+  // for (var i = 0; i < 3; i++) {
+  //   function inner(i) {
+  //     setTimeout(() => {
+  //       console.log(i);
+  //     }, 0);
+  //   }
+  //   inner(i)
+  // }
+
+  // for (let i = 0; i < 3; i++) {
+  //   setTimeout(() => {
+  //     console.log(i, 'Settimeout I');
+  //   }, 0);
+  // }
+
+  // for (let i = 0; i < 3; i++) {
+  //   setTimeout(() => {
+  //     console.log(i, 'Settimeout I')
+  //   }, i * 1000);
+  //   console.log(i, 'Without Settimeout I');
+  // }
+
+  // for (let i = 0; i < 3; i++) {
+  //   function inner(i) {
+  //     setTimeout(() => {
+  //       console.log(i);
+  //     }, i * 1000);
+  //   }
+  //   inner(i)
+  // }
+
+
+  // function whatWillPrint() {
+  //   return function () {
+  //     for (var i = 0; i < 3; i++) {
+  //       (function (index) {
+  //         setTimeout(() => {
+  //           console.log(index);
+  //         }, index * 1000);
+  //       })(i);
+  //     }
+  //   }
+  // }
+
+  // const closure = whatWillPrint()
+
+  // closure()
+
+  // function whatWillPrint() {
+  //   for (var i = 0; i < 3; i++) {
+  //     setTimeout(() => {
+  //       console.log(i)
+  //     }, i * 1000);
+  //   }
+  // }
+
+  // whatWillPrint()
+
+  // const dispatch = useDispatch();
+
+  // useEffect(() => {
+  //   dispatch(fetchData());
+  // }, [])
+
+
+  // (function () {
+  //   dispatch(fetchData());
+  // })()
+
+  // let data = useSelector((state) => state?.customers?.data[0]);
+
+  // console.log(data);
+
+  // function outerFn() {
+  //   let name = "Manahil"
+  //   function displayName() {
+  //     console.log(name)
+  //   }
+  //   return displayName
+  // }
+
+  // const innerFn = outerFn()
+  // innerFn()
+
+
+  // let arr = [1, 2, 3, 4, 5, 6]
+
+  // function sum(aaa) {
+  //   console.log(...aaa);
+  // }
+
+  // sum([...arr])
+
+  // debugger
+  // console.log(count)
+
+  // var count = 10
+
+  // console.log(MMMMMM);
+  // let MMMMMM = 10;
+
+  // var a = 'hello'
+
+  // function test() {
+  //   console.log(a)
+  //   var a = "World"
+  // }
+
+  // test()
+
+  // const obj = new Object()
+  // obj.name = "Manahil"
+
+  // console.log(obj);
+
+  // const originalObject = {
+  //   a: 1,
+  //   b: {
+  //     c: 2,
+  //     d: 3
+  //   }
+  // };
+
+  // function deepCopy(object) {
+  //   let obj = new Object()
+  //   for (const key in object) {
+  //     const element = object[key];
+  //     obj[key] = typeof element === 'object' ? deepCopy(element) : element
+  //   }
+  //   return obj
+  // }
+
+  // const deepCopyObj = deepCopy(originalObject)
+
+  // deepCopyObj.b.c = 666
+
+  // console.log(deepCopyObj);
+  // console.log(originalObject);
+
+  // let originalArr = [
+  //   1, 2, 3,
+  //   [4, 6]
+  // ]
+
+  // function deepCopy(arr) {
+  //   const newArr = []
+  //   arr.forEach((element, index) => {
+  //     newArr[index] = typeof element === 'object' ? deepCopy(element) : element
+  //   });
+  //   return newArr
+  // }
+
+  // function deepCopy(array) {
+  //   const newArr = []
+  //   for (let i = 0; i < array.length; i++) {
+  //     const element = array[i];
+  //     newArr[i] = typeof element === 'object' ? deepCopy(element) : element
+  //   }
+  //   return newArr
+  // }
+
+  // const deepCopyArr = deepCopy(originalArr)
+
+  // deepCopyArr[3][0] = 999
+
+  // console.clear()
+  // console.log(deepCopyArr)
+  // console.log(originalArr)
+
+  // function deepCopy(arr) {
+  //   return arr.map((ele) => {
+  //     if (typeof ele === 'object') {
+  //       return deepCopy(ele)
+  //     } else {
+  //       return ele
+  //     }
+  //   })
+  // }
+
+  // const deepCopyArr = deepCopy(originalArr)
+
+  // console.clear()
+
+  // deepCopyArr[3][0] = 9999
+
+  // console.log(deepCopyArr, originalArr);
+
+  // function deepCopy(arr) {
+  //   const newArr = []
+  //   for (let i = 0; i < arr.length; i++) {
+  //     const element = arr[i]
+  //     newArr[i] = typeof element === 'object' ? deepCopy(element) : element
+  //   }
+  //   return newArr
+  // }
+
+  // const deepCopyArr = deepCopy(originalArr)
+
+  // deepCopyArr[3][0] = 9999
+
+  // console.clear()
+  // console.log(deepCopyArr);
+  // console.log(originalArr);
+
+  // const originalObject = {
+  //   a: 1,
+  //   b: {
+  //     c: 2,
+  //     d: 3
+  //   }
+  // };
+
+  // function deepCopy(object) {
+  //   const obj = new Object()
+  //   for (const key in object) {
+  //     const element = object[key]
+  //     obj[key] = typeof element === "object" ? deepCopy(element) : element
+  //   }
+  //   return obj
+  // }
+
+  // const deepCopyObj = deepCopy(originalObject)
+
+  // deepCopyObj.b.c = 9999
+
+  // console.log(deepCopyObj);
+  // console.log(originalObject);
+
   // const arr = [1, 2, 3, 4, 5]
 
   // // const newArr = arr.find((ele) => ele > 2)
