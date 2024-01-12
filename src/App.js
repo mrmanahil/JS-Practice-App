@@ -53,10 +53,6 @@ import ReactIdleTimer from "./React_Idle_Timer";
 import WebPushNotification from "./Web_Push_Notifications";
 import { useAuthState } from "react-firebase-hooks/auth";
 
-function App() {
-  return (
-    <JavaScript />
-  );
-}
+const App = () => <JavaScript />
 
 export default App;

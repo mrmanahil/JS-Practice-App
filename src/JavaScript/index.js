@@ -11,6 +11,221 @@ import { Fragment } from "react";
 
 const Page = () => {
 
+
+  // const originalObject = {
+  //   a: 1,
+  //   b: {
+  //     c: 2,
+  //     d: 3
+  //   }
+  // };
+
+  // function deepCopy(object) {
+  //   const newObj = new Object()
+  //   for (const key in object) {
+  //     const element = object[key]
+  //     newObj[key] = typeof element === 'object' ? deepCopy(element) : element
+  //   }
+  //   return newObj
+  // }
+
+  // const deepCopyObj = deepCopy(originalObject)
+  // deepCopyObj.b.c = 999
+
+  // console.log(deepCopyObj, originalObject);
+
+  // let firstNum = 0
+
+  // let secondNum = 1
+
+  // for (let i = 0; i < 5; i++) {
+  //   [firstNum, secondNum] = [secondNum, firstNum + secondNum]
+  //   console.log(secondNum);
+  // }
+
+  // let firstNum = 0
+  // let secondNum = 1
+
+  // let sum;
+
+  // for (let i = 0; i < 5; i++) {
+  //   sum = firstNum + secondNum
+  //   firstNum = secondNum
+  //   secondNum = sum
+  //   console.log(sum);
+  // }
+
+  // const originalObject = {
+  //   a: 1,
+  //   b: {
+  //     c: 2,
+  //     d: 3
+  //   }
+  // };
+
+  // function deepCopy(object) {
+  //   const newObj = {}
+  //   for (let key in object) {
+  //     const element = object[key]
+  //     newObj[key] = typeof element === 'object' ? deepCopy(element) : element
+  //   }
+  //   return newObj
+  // }
+
+  // const deepCopyObj = deepCopy(originalObject)
+
+  // deepCopyObj.b.c = 999
+
+  // console.log(deepCopyObj, originalObject);
+
+  // const shallowCopyObject = Object.assign({}, originalObject)
+  // shallowCopyObject.a = 999
+
+  // console.log(originalObject, shallowCopyObject);
+
+
+  // let object = {
+  //   name: "Manahil"
+  // }
+
+  // const arrayOfObject = [object]
+
+  // object = null;
+
+  // console.log(arrayOfObject);
+
+
+  // console.log([..."Hello"])
+
+  // let originalArr = [
+  //   1, 2, 3,
+  //   [4, 6]
+  // ]
+
+  // function deepCopy(arr) {
+  //   return arr.filter((ele) => {
+  //     return typeof ele === 'object' ? deepCopy(ele) : ele
+  //   })
+  // }
+
+  // const deepCopyArr = deepCopy(originalArr)
+
+  // deepCopyArr[3][0] = 999
+
+  // console.log(deepCopyArr);
+  // console.log(originalArr);
+
+
+  // function deepCopy(arr) {
+  //   return arr.map((ele) => {
+  //     return typeof ele === 'object' ? deepCopy(ele) : ele
+  //   })
+  // }
+
+  // const deepCopyArr = deepCopy(originalArr)
+
+  // deepCopyArr[3][0] = 999
+
+  // console.log(deepCopyArr);
+  // console.log(originalArr);
+
+  // function deepCopy(arr) {
+  //   const newArr = []
+  //   for (let i = 0; i < arr.length; i++) {
+  //     const element = arr[i];
+  //     newArr[i] = typeof element === 'object' ? deepCopy(element) : element
+  //   }
+  //   return newArr
+  // }
+
+  // const deepCopyArr = deepCopy(originalArr)
+
+  // deepCopyArr[3][0] = 999
+
+  // console.log(deepCopyArr);
+  // console.log(originalArr);
+
+  // function deepCopy(arr) {
+  //   const newArr = []
+  //   arr.forEach((element, index) => {
+  //     newArr[index] = typeof element === 'object' ? deepCopy(element) : element
+  //   });
+  //   return newArr
+  // }
+
+  // const deepCopyArr = deepCopy(originalArr)
+
+  // deepCopyArr[3][0] = 999
+
+  // console.log(deepCopyArr);
+  // console.log(originalArr);
+
+  // const originalObject = {
+  //   a: 1,
+  //   b: {
+  //     c: 2,
+  //     d: 3
+  //   }
+  // };
+
+  // function deepCopy(object) {
+  //   const newObj = new Object()
+  //   for (const key in object) {
+  //     const element = object[key]
+  //     newObj[key] = typeof element === 'object' ? deepCopy(element) : element
+  //   }
+  //   return newObj
+  // }
+
+  // const deepCopyObj = deepCopy(originalObject)
+
+  // deepCopyObj.b.c = 999
+
+  // console.log(deepCopyObj);
+  // console.log(originalObject);
+
+  // let obj = {
+  //   a: 20,
+  //   b: 4,
+  //   c: "String",
+  //   sdds: "String",
+  //   dssd: "String",
+  //   sdf: "String",
+  //   f: "String",
+  // }
+
+  // function multiplyByTwo(object) {
+  //   for (const key in object) {
+  //     if (typeof object[key] === 'number') {
+  //       object[key] = object[key] * 2
+  //     }
+  //   }
+  // }
+
+  // multiplyByTwo(obj)
+
+  // console.log(obj);
+
+  // a = 20
+
+  // console.log(a);
+
+  // const getDeletedNum = (a) => {
+  //     delete a
+  //     return a
+  // }
+
+  // console.log(getDeletedNum(5));
+
+  // studied from : "Ilma University"
+
+  // const object = {
+  //   name: "Syed Manahil",
+  //   'studied from': "Ilma University"
+  // }
+
+  // console.log(object["studied from"]);
+
   // let a = {}
 
   // let b = { key: "b" }
